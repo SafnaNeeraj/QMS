@@ -1,0 +1,9 @@
+<apex:page standardController="Quote_Express__c" extensions="QuoteExpressCloneController">
+    <apex:form >
+        <apex:pageBlock title="Clone Quote Express and Related Items">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Clone" action="{!cloneQuoteAndItems}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier__c</fullName>
+    <externalId>false</externalId>
+    <label>Supplier</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Industry Directories</fullName>
+                <default>false</default>
+                <label>Industry Directories</label>
+            </value>
+            <value>
+                <fullName>Trade Shows</fullName>
+                <default>false</default>
+                <label>Trade Shows</label>
+            </value>
+            <value>
+                <fullName>Industry Associations</fullName>
+                <default>false</default>
+                <label>Industry Associations</label>
+            </value>
+            <value>
+                <fullName>Online B2B Platforms</fullName>
+                <default>false</default>
+                <label>Online B2B Platforms</label>
+            </value>
+            <value>
+                <fullName>Networking</fullName>
+                <default>false</default>
+                <label>Networking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

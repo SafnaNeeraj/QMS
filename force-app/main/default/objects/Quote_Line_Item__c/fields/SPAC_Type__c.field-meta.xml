@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPAC_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>SPAC Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SPAC® Cap Nut</fullName>
+                <default>false</default>
+                <label>SPAC® Cap Nut</label>
+            </value>
+            <value>
+                <fullName>SPAC® Ball Stud</fullName>
+                <default>false</default>
+                <label>SPAC® Ball Stud</label>
+            </value>
+            <value>
+                <fullName>SPAC® Bracket/nut assembly</fullName>
+                <default>false</default>
+                <label>SPAC® Bracket/nut assembly</label>
+            </value>
+            <value>
+                <fullName>SPAC® Clinch Bolt</fullName>
+                <default>false</default>
+                <label>SPAC® Clinch Bolt</label>
+            </value>
+            <value>
+                <fullName>SPAC® Clinch Stud</fullName>
+                <default>false</default>
+                <label>SPAC® Clinch Stud</label>
+            </value>
+            <value>
+                <fullName>SPAC® Nut</fullName>
+                <default>false</default>
+                <label>SPAC® Nut</label>
+            </value>
+            <value>
+                <fullName>SPAC® Other</fullName>
+                <default>false</default>
+                <label>SPAC® Other</label>
+            </value>
+            <value>
+                <fullName>SPAC® Spacer</fullName>
+                <default>false</default>
+                <label>SPAC® Spacer</label>
+            </value>
+            <value>
+                <fullName>SPAC® Stud</fullName>
+                <default>false</default>
+                <label>SPAC® Stud</label>
+            </value>
+            <value>
+                <fullName>SPAC® Bolt Assembly</fullName>
+                <default>false</default>
+                <label>SPAC® Bolt Assembly</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

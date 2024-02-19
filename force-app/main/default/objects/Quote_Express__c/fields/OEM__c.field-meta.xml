@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OEM__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Original Equipment Manufacturer</inlineHelpText>
+    <label>OEM</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bosch (Robert Bosch GmbH)</fullName>
+                <default>false</default>
+                <label>Bosch (Robert Bosch GmbH)</label>
+            </value>
+            <value>
+                <fullName>Continental AG</fullName>
+                <default>false</default>
+                <label>Continental AG</label>
+            </value>
+            <value>
+                <fullName>ZF Friedrichshafen AG</fullName>
+                <default>false</default>
+                <label>ZF Friedrichshafen AG</label>
+            </value>
+            <value>
+                <fullName>Denso Corporation</fullName>
+                <default>false</default>
+                <label>Denso Corporation</label>
+            </value>
+            <value>
+                <fullName>Magna International Inc</fullName>
+                <default>false</default>
+                <label>Magna International Inc</label>
+            </value>
+            <value>
+                <fullName>Valeo</fullName>
+                <default>false</default>
+                <label>Valeo</label>
+            </value>
+            <value>
+                <fullName>Aisin Seiki Co., Ltd.</fullName>
+                <default>false</default>
+                <label>Aisin Seiki Co., Ltd.</label>
+            </value>
+            <value>
+                <fullName>Mahle GmbH</fullName>
+                <default>false</default>
+                <label>Mahle GmbH</label>
+            </value>
+            <value>
+                <fullName>Sumitomo Electric Industries, Ltd.</fullName>
+                <default>false</default>
+                <label>Sumitomo Electric Industries, Ltd.</label>
+            </value>
+            <value>
+                <fullName>Hyundai</fullName>
+                <default>false</default>
+                <label>Hyundai</label>
+            </value>
+            <value>
+                <fullName>Toyota</fullName>
+                <default>false</default>
+                <label>Toyota</label>
+            </value>
+            <value>
+                <fullName>Volkswagen</fullName>
+                <default>false</default>
+                <label>Volkswagen</label>
+            </value>
+            <value>
+                <fullName>Daimler</fullName>
+                <default>false</default>
+                <label>Daimler</label>
+            </value>
+            <value>
+                <fullName>Suzuki</fullName>
+                <default>false</default>
+                <label>Suzuki</label>
+            </value>
+            <value>
+                <fullName>Stellantis</fullName>
+                <default>false</default>
+                <label>Stellantis</label>
+            </value>
+            <value>
+                <fullName>Ford</fullName>
+                <default>false</default>
+                <label>Ford</label>
+            </value>
+            <value>
+                <fullName>Renault-Nissan-Mitsubishi</fullName>
+                <default>false</default>
+                <label>Renault-Nissan-Mitsubishi</label>
+            </value>
+            <value>
+                <fullName>Unison</fullName>
+                <default>false</default>
+                <label>Unison</label>
+            </value>
+            <value>
+                <fullName>BelGee</fullName>
+                <default>false</default>
+                <label>BelGee</label>
+            </value>
+            <value>
+                <fullName>AllurGroup</fullName>
+                <default>false</default>
+                <label>AllurGroup</label>
+            </value>
+            <value>
+                <fullName>Asia Avto</fullName>
+                <default>false</default>
+                <label>Asia Avto</label>
+            </value>
+            <value>
+                <fullName>SemAZ</fullName>
+                <default>false</default>
+                <label>SemAZ</label>
+            </value>
+            <value>
+                <fullName>Astana Motors</fullName>
+                <default>false</default>
+                <label>Astana Motors</label>
+            </value>
+            <value>
+                <fullName>AvtoVAZ</fullName>
+                <default>false</default>
+                <label>AvtoVAZ</label>
+            </value>
+            <value>
+                <fullName>GM-AvtoVAZ</fullName>
+                <default>false</default>
+                <label>GM-AvtoVAZ</label>
+            </value>
+            <value>
+                <fullName>GUP Pissemasse</fullName>
+                <default>false</default>
+                <label>GUP Pissemasse</label>
+            </value>
+            <value>
+                <fullName>Avtotor</fullName>
+                <default>false</default>
+                <label>Avtotor</label>
+            </value>
+            <value>
+                <fullName>Derways</fullName>
+                <default>false</default>
+                <label>Derways</label>
+            </value>
+            <value>
+                <fullName>Irito</fullName>
+                <default>false</default>
+                <label>Irito</label>
+            </value>
+            <value>
+                <fullName>GAZ</fullName>
+                <default>false</default>
+                <label>GAZ</label>
+            </value>
+            <value>
+                <fullName>Sollers Ford</fullName>
+                <default>false</default>
+                <label>Sollers Ford</label>
+            </value>
+            <value>
+                <fullName>Great Wall</fullName>
+                <default>false</default>
+                <label>Great Wall</label>
+            </value>
+            <value>
+                <fullName>Sollers</fullName>
+                <default>false</default>
+                <label>Sollers</label>
+            </value>
+            <value>
+                <fullName>Anadolu-Isuzu</fullName>
+                <default>false</default>
+                <label>Anadolu-Isuzu</label>
+            </value>
+            <value>
+                <fullName>Honda</fullName>
+                <default>false</default>
+                <label>Honda</label>
+            </value>
+            <value>
+                <fullName>Karsan</fullName>
+                <default>false</default>
+                <label>Karsan</label>
+            </value>
+            <value>
+                <fullName>Otokar</fullName>
+                <default>false</default>
+                <label>Otokar</label>
+            </value>
+            <value>
+                <fullName>TOGG</fullName>
+                <default>false</default>
+                <label>TOGG</label>
+            </value>
+            <value>
+                <fullName>AvtoZAZ</fullName>
+                <default>false</default>
+                <label>AvtoZAZ</label>
+            </value>
+            <value>
+                <fullName>Eurocar</fullName>
+                <default>false</default>
+                <label>Eurocar</label>
+            </value>
+            <value>
+                <fullName>Roodell</fullName>
+                <default>false</default>
+                <label>Roodell</label>
+            </value>
+            <value>
+                <fullName>Uzavtosanoat</fullName>
+                <default>false</default>
+                <label>Uzavtosanoat</label>
+            </value>
+            <value>
+                <fullName>Magna-Steyr</fullName>
+                <default>false</default>
+                <label>Magna-Steyr</label>
+            </value>
+            <value>
+                <fullName>Geely</fullName>
+                <default>false</default>
+                <label>Geely</label>
+            </value>
+            <value>
+                <fullName>Valmet</fullName>
+                <default>false</default>
+                <label>Valmet</label>
+            </value>
+            <value>
+                <fullName>Ineos</fullName>
+                <default>false</default>
+                <label>Ineos</label>
+            </value>
+            <value>
+                <fullName>StreetScooter</fullName>
+                <default>false</default>
+                <label>StreetScooter</label>
+            </value>
+            <value>
+                <fullName>Tesla</fullName>
+                <default>false</default>
+                <label>Tesla</label>
+            </value>
+            <value>
+                <fullName>e.GO</fullName>
+                <default>false</default>
+                <label>e.GO</label>
+            </value>
+            <value>
+                <fullName>Piaggio</fullName>
+                <default>false</default>
+                <label>Piaggio</label>
+            </value>
+            <value>
+                <fullName>Pininfarina</fullName>
+                <default>false</default>
+                <label>Pininfarina</label>
+            </value>
+            <value>
+                <fullName>CNH Industrial</fullName>
+                <default>false</default>
+                <label>CNH Industrial</label>
+            </value>
+            <value>
+                <fullName>Ferrari</fullName>
+                <default>false</default>
+                <label>Ferrari</label>
+            </value>
+            <value>
+                <fullName>VDL</fullName>
+                <default>false</default>
+                <label>VDL</label>
+            </value>
+            <value>
+                <fullName>Salvador Caetano</fullName>
+                <default>false</default>
+                <label>Salvador Caetano</label>
+            </value>
+            <value>
+                <fullName>Arrival</fullName>
+                <default>false</default>
+                <label>Arrival</label>
+            </value>
+            <value>
+                <fullName>Aston Martin</fullName>
+                <default>false</default>
+                <label>Aston Martin</label>
+            </value>
+            <value>
+                <fullName>Caterham</fullName>
+                <default>false</default>
+                <label>Caterham</label>
+            </value>
+            <value>
+                <fullName>Multimatic</fullName>
+                <default>false</default>
+                <label>Multimatic</label>
+            </value>
+            <value>
+                <fullName>McLaren</fullName>
+                <default>false</default>
+                <label>McLaren</label>
+            </value>
+            <value>
+                <fullName>Morgan</fullName>
+                <default>false</default>
+                <label>Morgan</label>
+            </value>
+            <value>
+                <fullName>SAIC Motors</fullName>
+                <default>false</default>
+                <label>SAIC Motors</label>
+            </value>
+            <value>
+                <fullName>TVR</fullName>
+                <default>false</default>
+                <label>TVR</label>
+            </value>
+            <value>
+                <fullName>General Motors</fullName>
+                <default>false</default>
+                <label>General Motors</label>
+            </value>
+            <value>
+                <fullName>Mazda</fullName>
+                <default>false</default>
+                <label>Mazda</label>
+            </value>
+            <value>
+                <fullName>SIA</fullName>
+                <default>false</default>
+                <label>SIA</label>
+            </value>
+            <value>
+                <fullName>COMPAS</fullName>
+                <default>false</default>
+                <label>COMPAS</label>
+            </value>
+            <value>
+                <fullName>Mercedes-Benz Vans</fullName>
+                <default>false</default>
+                <label>Mercedes-Benz Vans</label>
+            </value>
+            <value>
+                <fullName>Navistar</fullName>
+                <default>false</default>
+                <label>Navistar</label>
+            </value>
+            <value>
+                <fullName>Lucis Motors</fullName>
+                <default>false</default>
+                <label>Lucis Motors</label>
+            </value>
+            <value>
+                <fullName>Mazda Toyota Manufacturing</fullName>
+                <default>false</default>
+                <label>Mazda Toyota Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Rivian Automotive</fullName>
+                <default>false</default>
+                <label>Rivian Automotive</label>
+            </value>
+            <value>
+                <fullName>Karma Automotive</fullName>
+                <default>false</default>
+                <label>Karma Automotive</label>
+            </value>
+            <value>
+                <fullName>Giant Motors</fullName>
+                <default>false</default>
+                <label>Giant Motors</label>
+            </value>
+            <value>
+                <fullName>Canoo</fullName>
+                <default>false</default>
+                <label>Canoo</label>
+            </value>
+            <value>
+                <fullName>Zoox</fullName>
+                <default>false</default>
+                <label>Zoox</label>
+            </value>
+            <value>
+                <fullName>KUKA</fullName>
+                <default>false</default>
+                <label>KUKA</label>
+            </value>
+            <value>
+                <fullName>Foxconn</fullName>
+                <default>false</default>
+                <label>Foxconn</label>
+            </value>
+            <value>
+                <fullName>Oshkosh Defense</fullName>
+                <default>false</default>
+                <label>Oshkosh Defense</label>
+            </value>
+            <value>
+                <fullName>AM General</fullName>
+                <default>false</default>
+                <label>AM General</label>
+            </value>
+            <value>
+                <fullName>CODA Automotive</fullName>
+                <default>false</default>
+                <label>CODA Automotive</label>
+            </value>
+            <value>
+                <fullName>GLM</fullName>
+                <default>false</default>
+                <label>GLM</label>
+            </value>
+            <value>
+                <fullName>Isuzu</fullName>
+                <default>false</default>
+                <label>Isuzu</label>
+            </value>
+            <value>
+                <fullName>Subaru</fullName>
+                <default>false</default>
+                <label>Subaru</label>
+            </value>
+            <value>
+                <fullName>Edison Motors</fullName>
+                <default>false</default>
+                <label>Edison Motors</label>
+            </value>
+            <value>
+                <fullName>Renault Samsung</fullName>
+                <default>false</default>
+                <label>Renault Samsung</label>
+            </value>
+            <value>
+                <fullName>Gwangju Global Motors</fullName>
+                <default>false</default>
+                <label>Gwangju Global Motors</label>
+            </value>
+            <value>
+                <fullName>Ssangyong</fullName>
+                <default>false</default>
+                <label>Ssangyong</label>
+            </value>
+            <value>
+                <fullName>Aiways</fullName>
+                <default>false</default>
+                <label>Aiways</label>
+            </value>
+            <value>
+                <fullName>Ankai Auto</fullName>
+                <default>false</default>
+                <label>Ankai Auto</label>
+            </value>
+            <value>
+                <fullName>BAIC</fullName>
+                <default>false</default>
+                <label>BAIC</label>
+            </value>
+            <value>
+                <fullName>BAIC Foton</fullName>
+                <default>false</default>
+                <label>BAIC Foton</label>
+            </value>
+            <value>
+                <fullName>BAIC- Yinxiang</fullName>
+                <default>false</default>
+                <label>BAIC- Yinxiang</label>
+            </value>
+            <value>
+                <fullName>Beijing Automobile Works</fullName>
+                <default>false</default>
+                <label>Beijing Automobile Works</label>
+            </value>
+            <value>
+                <fullName>Beijing-Benz</fullName>
+                <default>false</default>
+                <label>Beijing-Benz</label>
+            </value>
+            <value>
+                <fullName>Borgward-Auto</fullName>
+                <default>false</default>
+                <label>Borgward-Auto</label>
+            </value>
+            <value>
+                <fullName>Changhe-suzuki</fullName>
+                <default>false</default>
+                <label>Changhe-suzuki</label>
+            </value>
+            <value>
+                <fullName>Brilliance-BMW</fullName>
+                <default>false</default>
+                <label>Brilliance-BMW</label>
+            </value>
+            <value>
+                <fullName>Brilliance-Renault</fullName>
+                <default>false</default>
+                <label>Brilliance-Renault</label>
+            </value>
+            <value>
+                <fullName>CH-AUTO</fullName>
+                <default>false</default>
+                <label>CH-AUTO</label>
+            </value>
+            <value>
+                <fullName>Nanjing-Iveco</fullName>
+                <default>false</default>
+                <label>Nanjing-Iveco</label>
+            </value>
+            <value>
+                <fullName>CNHTC</fullName>
+                <default>false</default>
+                <label>CNHTC</label>
+            </value>
+            <value>
+                <fullName>CRRC</fullName>
+                <default>false</default>
+                <label>CRRC</label>
+            </value>
+            <value>
+                <fullName>Changan</fullName>
+                <default>false</default>
+                <label>Changan</label>
+            </value>
+            <value>
+                <fullName>Changan Hafei</fullName>
+                <default>false</default>
+                <label>Changan Hafei</label>
+            </value>
+            <value>
+                <fullName>Changan-Food</fullName>
+                <default>false</default>
+                <label>Changan-Food</label>
+            </value>
+            <value>
+                <fullName>Changan-Nanjing</fullName>
+                <default>false</default>
+                <label>Changan-Nanjing</label>
+            </value>
+            <value>
+                <fullName>Changan-PSA</fullName>
+                <default>false</default>
+                <label>Changan-PSA</label>
+            </value>
+            <value>
+                <fullName>Changan-Suzuki</fullName>
+                <default>false</default>
+                <label>Changan-Suzuki</label>
+            </value>
+            <value>
+                <fullName>Fuqi</fullName>
+                <default>false</default>
+                <label>Fuqi</label>
+            </value>
+            <value>
+                <fullName>Jiangling Holding</fullName>
+                <default>false</default>
+                <label>Jiangling Holding</label>
+            </value>
+            <value>
+                <fullName>Jiangling Motors</fullName>
+                <default>false</default>
+                <label>Jiangling Motors</label>
+            </value>
+            <value>
+                <fullName>GAC-Chanfeng</fullName>
+                <default>false</default>
+                <label>GAC-Chanfeng</label>
+            </value>
+            <value>
+                <fullName>Chengdu Bus</fullName>
+                <default>false</default>
+                <label>Chengdu Bus</label>
+            </value>
+            <value>
+                <fullName>Chery</fullName>
+                <default>false</default>
+                <label>Chery</label>
+            </value>
+            <value>
+                <fullName>Cowin</fullName>
+                <default>false</default>
+                <label>Cowin</label>
+            </value>
+            <value>
+                <fullName>Qoros</fullName>
+                <default>false</default>
+                <label>Qoros</label>
+            </value>
+            <value>
+                <fullName>China First Tractor</fullName>
+                <default>false</default>
+                <label>China First Tractor</label>
+            </value>
+            <value>
+                <fullName>Fujian-Daimler</fullName>
+                <default>false</default>
+                <label>Fujian-Daimler</label>
+            </value>
+            <value>
+                <fullName>Dandong Huanghai</fullName>
+                <default>false</default>
+                <label>Dandong Huanghai</label>
+            </value>
+            <value>
+                <fullName>Dongferg</fullName>
+                <default>false</default>
+                <label>Dongferg</label>
+            </value>
+            <value>
+                <fullName>Dongferg limited</fullName>
+                <default>false</default>
+                <label>Dongferg limited</label>
+            </value>
+            <value>
+                <fullName>Dongferg-Liuzhou</fullName>
+                <default>false</default>
+                <label>Dongferg-Liuzhou</label>
+            </value>
+            <value>
+                <fullName>Dongferg-Yuan</fullName>
+                <default>false</default>
+                <label>Dongferg-Yuan</label>
+            </value>
+            <value>
+                <fullName>Zhengzhou-Nissan</fullName>
+                <default>false</default>
+                <label>Zhengzhou-Nissan</label>
+            </value>
+            <value>
+                <fullName>Dorcen</fullName>
+                <default>false</default>
+                <label>Dorcen</label>
+            </value>
+            <value>
+                <fullName>Enovate</fullName>
+                <default>false</default>
+                <label>Enovate</label>
+            </value>
+            <value>
+                <fullName>FAW</fullName>
+                <default>false</default>
+                <label>FAW</label>
+            </value>
+            <value>
+                <fullName>FAW Car</fullName>
+                <default>false</default>
+                <label>FAW Car</label>
+            </value>
+            <value>
+                <fullName>FAW Tianjin Xiali</fullName>
+                <default>false</default>
+                <label>FAW Tianjin Xiali</label>
+            </value>
+            <value>
+                <fullName>FAW-GM</fullName>
+                <default>false</default>
+                <label>FAW-GM</label>
+            </value>
+            <value>
+                <fullName>FDG</fullName>
+                <default>false</default>
+                <label>FDG</label>
+            </value>
+            <value>
+                <fullName>Foday</fullName>
+                <default>false</default>
+                <label>Foday</label>
+            </value>
+            <value>
+                <fullName>Changan-Mazda</fullName>
+                <default>false</default>
+                <label>Changan-Mazda</label>
+            </value>
+            <value>
+                <fullName>Volvo</fullName>
+                <default>false</default>
+                <label>Volvo</label>
+            </value>
+            <value>
+                <fullName>Fujian Forta</fullName>
+                <default>false</default>
+                <label>Fujian Forta</label>
+            </value>
+            <value>
+                <fullName>Fujian Motor Industry</fullName>
+                <default>false</default>
+                <label>Fujian Motor Industry</label>
+            </value>
+            <value>
+                <fullName>GAC-Fiat</fullName>
+                <default>false</default>
+                <label>GAC-Fiat</label>
+            </value>
+            <value>
+                <fullName>GAC-Honda</fullName>
+                <default>false</default>
+                <label>GAC-Honda</label>
+            </value>
+            <value>
+                <fullName>GAC-Mistubishi</fullName>
+                <default>false</default>
+                <label>GAC-Mistubishi</label>
+            </value>
+            <value>
+                <fullName>GAC-Toyota</fullName>
+                <default>false</default>
+                <label>GAC-Toyota</label>
+            </value>
+            <value>
+                <fullName>GAMC</fullName>
+                <default>false</default>
+                <label>GAMC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

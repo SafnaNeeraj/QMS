@@ -1,0 +1,391 @@
+<template>
+	<lightning-card>
+		<div class="slds-box" style="margin-left: 5px; margin-right: 5px">
+
+			<lightning-layout>
+				<lightning-layout-item size="2">
+					<span style= "color: cornflowerblue; font-weight: bold;">Customer:</span></br>
+					<span>{customer}</span>
+				</lightning-layout-item>
+
+				<lightning-layout-item size="2">
+					<span style= "color: cornflowerblue; font-weight: bold;">Buyer:</span></br>
+					<span>{buyer}</span>
+				</lightning-layout-item>
+
+				<lightning-layout-item size="2">
+					<span style= "color: cornflowerblue; font-weight: bold;">Platform:</span></br>
+					<span>{platform}</span>
+				</lightning-layout-item>
+
+				<lightning-layout-item size="2">
+					<span style= "color: cornflowerblue; font-weight: bold;">OEM:</span></br>
+					<span>{oem}</span>
+				</lightning-layout-item>
+
+				<lightning-layout-item size="2">
+					<span style= "color: cornflowerblue; font-weight: bold;">SOP:</span></br>
+					<span>{sop}</span>
+				</lightning-layout-item>
+
+				<lightning-layout-item size="2">
+					<span style= "color: cornflowerblue; font-weight: bold;">EOP:</span></br>
+					<span>{eop}</span>
+				</lightning-layout-item>
+
+			</lightning-layout>
+		</div>
+		<div>
+			<template for:each={data} for:item="data">
+				<div class="slds-box " style="margin-top: 1rem;margin-bottom: 2rem;" key={data.id}>
+                    <lightning-layout multiple-rows key={data.Id}>
+						<lightning-layout-item size="1" flexibility="auto" medium-device-size="1">
+							<lightning-button class="slds-float_right" variant="neutral" label="Edit" data-id={data.Id}
+								onclick={handleEdit}></lightning-button>
+						</lightning-layout-item>
+						<lightning-layout-item size="1" flexibility="auto" medium-device-size="1">
+							<lightning-button class="slds-float_right" variant="neutral" label="Copy" data-id={data.Id}
+								onclick={handleCopy}></lightning-button>
+						</lightning-layout-item>
+						<lightning-layout-item size="1" flexibility="auto" medium-device-size="1">
+							<lightning-button class="slds-float_right" variant="neutral" label="Delete"
+								data-id={data.Id} onclick={handleDelete}></lightning-button>
+						</lightning-layout-item>
+						<lightning-layout-item size="5" flexibility="auto" medium-device-size="5">
+						</lightning-layout-item>
+						<lightning-layout-item size="2" flexibility="auto" medium-device-size="2">
+							<lightning-button class="slds-float_right" variant="neutral" label="Process Routing"
+								data-id={data.Id} onclick={handleProcessRouting}></lightning-button>
+						</lightning-layout-item>
+						<lightning-layout-item size="2" flexibility="auto" medium-device-size="2">
+							<lightning-button class="slds-float_right" variant="neutral" label="Part Costing"
+								data-id={data.Id} onclick={handlePartCosting}></lightning-button>
+						</lightning-layout-item>
+					</lightning-layout>
+
+					<lightning-layout multiple-rows key={data.Id}>
+						<lightning-layout-item size="4" medium-device-size="4"  padding="around-small">
+							<lightning-icon icon-name="action:info" size="xx-small"></lightning-icon>
+							<b  style= "color: cornflowerblue; font-weight: bold; font-size:14px; padding-left:10px;">Part Type :</b>{data.RecordType.Name}
+						</lightning-layout-item>
+						<lightning-layout-item size="4"  medium-device-size="4" padding="around-small">
+							<p style="color: cornflowerblue; font-weight: bold; font-size:14px"><b>Drawing # :</b>{data.Customer_Drawing__c}</p>
+						</lightning-layout-item>
+						<lightning-layout-item size="4"  medium-device-size="4" padding="around-small">
+							<p style="color: cornflowerblue; font-weight: bold; font-size:14px"><b>Customer Part # :</b>{data.Customer_Part__c}
+							</p>
+						</lightning-layout-item>
+						
+                       </lightning-layout>
+					  
+					<lightning-layout multiple-rows key={data.Id}>
+						<lightning-layout-item size="6" medium-device-size="3" padding="around-small">
+							<div class="slds-p-around_medium slds-text-align_center" style="font-size:14px">
+								<p><b>Customer Drawing#:</b></p>
+								<p>{data.Customer_Drawing__c}</p>
+							</div>
+						</lightning-layout-item>
+						<lightning-layout-item size="6" medium-device-size="3" padding="around-small">
+							<div class="slds-p-around_medium slds-text-align_center" style="font-size:14px">
+								<p><b>Part Description: </b></p>
+								<p>{data.Part_Description__c}</p>
+							</div>
+						</lightning-layout-item>
+						<lightning-layout-item size="6" medium-device-size="3" padding="around-small">
+							<div class="slds-p-around_medium slds-text-align_center" style="font-size:14px">
+								<p><b>Target Price/M ($):</b>{data.Pieces__c}</p>
+								<p></p>
+							</div>
+						</lightning-layout-item>
+						<lightning-layout-item size="6" medium-device-size="3" padding="around-small">
+							<div class="slds-p-around_medium slds-text-align_center" style="font-size:14px">
+								<p><b>Quoted Price#:</b></p>
+								<p></p>
+							</div>
+						</lightning-layout-item>
+					</lightning-layout>
+					<div class="slds-box slds-var-p-around_medium" style="margin-left: 5px; margin-right: 5px" key={data.Id}>
+						<div class="slds-grid slds-wrap" key={data.Id}>
+							<div class="slds-size_2-of-6" key={data.Id}>
+								<lightning-icon icon-name="action:info" size="xx-small" onclick={handleiconmodal} data-id={data.Id}></lightning-icon>
+								<b> Ext Annual Usage/Quantity (Pcs/yr) :</b>
+							</div>
+							<div class="slds-size_2-of-6">
+								<p style="margin-top: 0.35rem;"><b>Price ($) :</b></p>
+							</div>
+							<div class="slds-size_2-of-6">
+								<p style="margin-top: 0.35rem;"><b>Ext Price ($) :</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="slds-box slds-var-p-around_medium" style="margin-left: 5px; margin-right: 5px">
+						<div class="slds-grid slds-wrap">
+							<div class="slds-size_1-of-3">
+								<p><b>Status : </b>{data.Status__c}</p>
+								<p><b>Quoted Sample Lead Time (wks) : </b>{data.Sample_Lead_Time__c}</p>
+								<p ><b>Quoted Production Lead Time (wks) : </b>{data.Production_Lead_Time__c}</p>
+
+							</div>
+							<div class="slds-size_1-of-3">
+								<p><b>Probability(%) : </b>{data.Probability__c}</p>
+								<p><b>Report : </b>{data.Report__c}</p>
+								<p><b>Notes : </b>{data.Notes__c}</p>
+								
+							</div>
+							<div class="slds-size_1-of-3">
+								<p><b>Start Date : </b>{data.Start_Date__c}</p>
+								<p><b>End Date : </b>{data.End_Date__c}</p>
+								
+							</div>
+						</div>
+						
+							
+							
+					</div>
+				</div>
+			</template>
+		</div>
+		<a class="slds-align_absolute-center" onclick={handleViewAll}>View All</a>
+	</lightning-card>
+	<template if:true={viewAll}>
+		<section aria-describedby="modal-content-id-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			class="slds-modal slds-fade-in-open" role="dialog" tabindex="-1">
+			<div class="slds-modal__container">
+				<header class="slds-modal__header" title="Quote Line Items">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closeModal} title="Close">
+                        <lightning-icon icon-name="utility:close" size="medium" variant="inverse"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+				</header>
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					<c-view-all-q-l-i record-id={recordId} style="height:100% !important; width: 100% !important;">
+					</c-view-all-q-l-i>
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+	<template if:true={showEdit}>
+		<section aria-describedby="modal-content-id-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			class="slds-modal slds-fade-in-open" role="dialog" tabindex="-1">
+			<div class="slds-modal__container">
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closeModal} title="Close">
+                        <lightning-icon icon-name="utility:close" size="medium" variant="inverse"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+				</header>
+				<div if:true={editSpac} class="slds-modal__content slds-p-around_medium">
+					<c-spac-component quote-line-id={quoteLineId} record-type={recordType} edit-spac={editSpac}
+						style="height:100% !important; width: 100% !important;">
+					</c-spac-component>
+				</div>
+				<div if:true={editNonSpac} class="slds-modal__content slds-p-around_medium">
+					<c-non-spac-component quote-line-id={quoteLineId} record-type={recordType} edit-non-spac={editNonSpac}
+						style="height:100% !important; width: 100% !important;">
+					</c-non-spac-component>
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+
+	</template>
+		<template if:true={isShowModal}>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+       <div class="slds-modal__container">
+        <!-- modal header start -->
+          <header class="slds-modal__header">
+             <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                <lightning-icon icon-name="utility:close"
+                   alternative-text="close"
+                   variant="inverse"
+                   size="small" ></lightning-icon>
+                <span class="slds-assistive-text">Close</span>
+             </button>
+             <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Details</h2>
+          </header>
+      
+          <!-- modal body start -->
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-10">
+               <lightning-record-edit-form style="height: 100%; width: 100%" record-id={quoteLineId}
+					object-api-name="Quote_Line_Item__c" onsuccess={handleSuccess} onsubmit={handleSubmit} onerror={handleError}>	
+				<lightning-messages></lightning-messages>
+				<div class="slds-box">
+				<lightning-layout>
+						<lightning-layout-item size="2">	
+							<b  style= "color: cornflowerblue; font-weight: bold; font-size:14px;">Part Type : </b>
+						</lightning-layout-item>
+						<lightning-layout-item size="2">
+							<p style="color: cornflowerblue; font-weight: bold; font-size:14px"><b>Part # :</b></p>
+						</lightning-layout-item>
+						<lightning-layout-item size="2" >
+							<p style="color: cornflowerblue; font-weight: bold; font-size:14px"><b>Customer Part # :</b>
+							</p>
+						</lightning-layout-item>
+						<lightning-layout-item size="3" >
+							<p style="color: cornflowerblue; font-weight: bold; font-size:14px"><b>SPAC Annual Usage/Quantity (Pcs/yr):</b></p>
+						</lightning-layout-item>
+						<lightning-layout-item size="2" >
+							<p style="color: cornflowerblue; font-weight: bold; font-size:14px"><b>Price ($):</b>
+							</p>
+						</lightning-layout-item>
+						<lightning-layout-item size="1" >
+							<p style="color: cornflowerblue; font-weight: bold; font-size:14px"><b>Ext Price ($):</b>
+							</p>
+						</lightning-layout-item>
+                       </lightning-layout>
+					   <lightning-layout>
+						<lightning-layout-item size="2">	
+							{Part_Type}
+						</lightning-layout-item>
+						<lightning-layout-item size="2">
+							{Part}
+						</lightning-layout-item>
+						<lightning-layout-item size="2" >
+							{Customer_Part}
+						</lightning-layout-item>
+						<lightning-layout-item size="3" >
+							{SPAC_Annual_Usage}
+						</lightning-layout-item>
+						<lightning-layout-item size="2" >
+							{Price}
+						</lightning-layout-item>
+						<lightning-layout-item size="1" >
+							{Ext_Price}
+						</lightning-layout-item>
+                       </lightning-layout>
+				</div>
+					<lightning-accordion  allow-multiple-sections-open active-section-name="A">
+						
+						<lightning-accordion-section  name="A" label="Details"
+							style="color: cornflowerblue; font-weight: bold; background-color: #FDFFFF;" class="slds-box">
+							
+								<lightning-layout>
+							<lightning-layout-item size="3">
+									<lightning-input-field field-name="Status__c" value={Status} onchange={handleStatusChange}></lightning-input-field>
+								</lightning-layout-item>
+							<lightning-layout-item size="3">
+									<lightning-input-field field-name="Probability__c" value={Probability} onchange={handleProbabilityChange} ></lightning-input-field>
+								</lightning-layout-item>
+						
+								<lightning-layout-item size="3">
+									<lightning-input-field field-name="Start_Date__c" value={Start_Date} onchange={handleStartDateChange}></lightning-input-field>
+								</lightning-layout-item>
+								<lightning-layout-item size="3">
+									<lightning-input-field field-name="End_Date__c" value={End_Date} onchange={handleEndDateChange}></lightning-input-field>
+								</lightning-layout-item>
+								
+							</lightning-layout>
+							<lightning-layout>
+								<lightning-layout-item size="4">
+									<lightning-input-field field-name="Sample_Lead_Time__c" value={Sample_Lead_Time} onchange={handleSampleLeadChange}></lightning-input-field>
+								</lightning-layout-item>
+								<lightning-layout-item size="4">
+									<lightning-input-field field-name="Production_Lead_Time__c" value={Production_Lead_Time} onchange={handleProductionTimeChange}></lightning-input-field>
+								</lightning-layout-item>
+								<lightning-layout-item size="4">
+									<lightning-input-field field-name="Report__c" value={Report} onchange={handleReportChange} disabled={disableReport}></lightning-input-field>
+								</lightning-layout-item>
+							</lightning-layout>
+							<lightning-layout>	
+								<lightning-layout-item size="5">
+									<lightning-input-field field-name="Notes__c"  value={Notes} onchange={handleNotesChange}></lightning-input-field>
+								</lightning-layout-item>
+							</lightning-layout>
+							
+        <div style="text-align:center;" >
+                        <lightning-button variant="brand" class="slds-var-p-around_medium" type="submit" label="Save">
+                        </lightning-button>
+                    </div>
+						</lightning-accordion-section>
+					</lightning-accordion>
+               </lightning-record-edit-form>
+				
+          </div>
+
+          <!-- modal footer start-->
+          <footer class="slds-modal__footer">
+             <button class="slds-button slds-button_neutral" onclick={hideModalBox}>Cancel</button>
+          </footer>
+       
+       </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+ </template>
+	<template if:true={showNonSpacCopy}>
+		<section aria-describedby="modal-content-id-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			class="slds-modal slds-fade-in-open" role="dialog" tabindex="-1">
+			<div class="slds-modal__container">
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closeModal} title="Close">
+                        <lightning-icon icon-name="utility:close" size="medium" variant="inverse"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+				</header>
+				<div class="slds-modal__content slds-p-around_medium">
+					<c-copy-non-spac-parts quote-line-id={quoteLineId} record-type={recordType}
+						style="height:100% !important; width: 100% !important;">
+					</c-copy-non-spac-parts>
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+
+	</template>
+
+	<template if:true={showSpacCopy}>
+		<section aria-describedby="modal-content-id-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			class="slds-modal slds-fade-in-open" role="dialog" tabindex="-1">
+			<div class="slds-modal__container">
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closeModal} title="Close">
+                        <lightning-icon icon-name="utility:close" size="medium" variant="inverse"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+				</header>
+				<div class="slds-modal__content slds-p-around_medium">
+					<c-copy-spac-parts quote-line-id={quoteLineId} record-type={recordType}
+						style="height:100% !important; width: 100% !important;">
+					</c-copy-spac-parts>
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+
+	</template>
+
+	<template if:true={deleteQLI}>
+		<section aria-describedby="modal-content-id-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			class="slds-modal slds-fade-in-open" role="dialog" tabindex="-1">
+			<div class="slds-modal__container">
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closeModal} title="Close">
+                        <lightning-icon icon-name="utility:close" size="medium" variant="inverse"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+					<h2 class="slds-modal__title slds-hyphenate" tabindex="-1"
+						style="font-weight: bold;font-size: 20px;">Delete Parts</h2>
+				</header>
+				<div class="slds-modal__content slds-p-around_medium" style="height: 7rem;">
+					<h1 style="font-size: 1.5rem;margin-left: 25rem;margin-top: 1.5rem;">Are you sure to delete the
+						Quote Line Item ?</h1>
+				</div>
+				<footer class="slds-modal__footer">
+					<lightning-button label="No" onclick={closeModal} variant="brand"></lightning-button>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<lightning-button label="Yes" onclick={handleYes} variant="neutral"></lightning-button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+
+	</template>
+	<template if:true={openProcessRouting}>
+		<c-routingprocess style="height:100% !important; width: 100% !important;" is-modal-open1={openProcessRouting}
+			onmodalchange={hanldeModalchange} quotelineitem={quotelineitemsid}></c-routingprocess>
+		<!-- <c-process-routing style="height:100% !important; width: 100% !important;"></c-process-routing> -->
+	</template>
+	<template if:true={openPartCosting}>
+		<c-part-costing style="height:100% !important; width: 100% !important;"></c-part-costing>
+	</template>
+</template>

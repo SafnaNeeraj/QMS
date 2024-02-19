@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freight_Terms__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>A freight term identifies how transportation costs are calculated</inlineHelpText>
+    <label>Freight Terms</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Liability and Insurance: Specifies who is responsible for any loss or damage to the goods during transit and whether insurance is provided.</fullName>
+                <default>false</default>
+                <label>Liability and Insurance: Specifies who is responsible for any loss or damage to the goods during transit and whether insurance is provided.</label>
+            </value>
+            <value>
+                <fullName>Delivery Times and Dates: Defines the agreed-upon schedule for the delivery of the goods, including any penalties for delays.</fullName>
+                <default>false</default>
+                <label>Delivery Times and Dates: Defines the agreed-upon schedule for the delivery of the goods, including any penalties for delays.</label>
+            </value>
+            <value>
+                <fullName>Payment Terms: Outlines how and when the shipper is required to pay for the transportation services.</fullName>
+                <default>false</default>
+                <label>Payment Terms: Outlines how and when the shipper is required to pay for the transportation services.</label>
+            </value>
+            <value>
+                <fullName>Claims and Disputes: Describes the process for filing claims in case of damaged or lost goods and outlines the dispute resolution procedure.</fullName>
+                <default>false</default>
+                <label>Claims and Disputes: Describes the process for filing claims in case of damaged or lost goods and outlines the dispute resolution procedure.</label>
+            </value>
+            <value>
+                <fullName>Packaging Requirements: Specifies how the goods should be packaged to ensure safe transport.</fullName>
+                <default>false</default>
+                <label>Packaging Requirements: Specifies how the goods should be packaged to ensure safe transport.</label>
+            </value>
+            <value>
+                <fullName>Customs and Duties: Addresses responsibilities related to customs clearance and any applicable duties or taxes.</fullName>
+                <default>false</default>
+                <label>Customs and Duties: Addresses responsibilities related to customs clearance and any applicable duties or taxes.</label>
+            </value>
+            <value>
+                <fullName>3rd Party Billing</fullName>
+                <default>false</default>
+                <label>3rd Party Billing</label>
+            </value>
+            <value>
+                <fullName>CFR Cost and Freight</fullName>
+                <default>false</default>
+                <label>CFR Cost and Freight</label>
+            </value>
+            <value>
+                <fullName>CIP - Cost, Insurance and Freight</fullName>
+                <default>false</default>
+                <label>CIP - Cost, Insurance and Freight</label>
+            </value>
+            <value>
+                <fullName>CIP - Carriage and Insurance Paid to</fullName>
+                <default>false</default>
+                <label>CIP - Carriage and Insurance Paid to</label>
+            </value>
+            <value>
+                <fullName>Collect</fullName>
+                <default>false</default>
+                <label>Collect</label>
+            </value>
+            <value>
+                <fullName>CPT - Carriage Paid to Customer</fullName>
+                <default>false</default>
+                <label>CPT - Carriage Paid to Customer</label>
+            </value>
+            <value>
+                <fullName>Pickup</fullName>
+                <default>false</default>
+                <label>Pickup</label>
+            </value>
+            <value>
+                <fullName>DAF - Delivered at Frontier</fullName>
+                <default>false</default>
+                <label>DAF - Delivered at Frontier</label>
+            </value>
+            <value>
+                <fullName>DAP - Delivered at Place</fullName>
+                <default>false</default>
+                <label>DAP - Delivered at Place</label>
+            </value>
+            <value>
+                <fullName>DDP Delivered Duty Paid</fullName>
+                <default>false</default>
+                <label>DDP Delivered Duty Paid</label>
+            </value>
+            <value>
+                <fullName>DEQ - Delivered Ex Quay</fullName>
+                <default>false</default>
+                <label>DEQ - Delivered Ex Quay</label>
+            </value>
+            <value>
+                <fullName>EXW - Ex Works</fullName>
+                <default>false</default>
+                <label>EXW - Ex Works</label>
+            </value>
+            <value>
+                <fullName>FAS Free Along Ship</fullName>
+                <default>false</default>
+                <label>FAS Free Along Ship</label>
+            </value>
+            <value>
+                <fullName>FCA Free Carrier</fullName>
+                <default>false</default>
+                <label>FCA Free Carrier</label>
+            </value>
+            <value>
+                <fullName>FOB - Free On Board</fullName>
+                <default>false</default>
+                <label>FOB - Free On Board</label>
+            </value>
+            <value>
+                <fullName>PP&amp;A - Prepaid</fullName>
+                <default>false</default>
+                <label>PP&amp;A - Prepaid</label>
+            </value>
+            <value>
+                <fullName>PrePaid</fullName>
+                <default>false</default>
+                <label>PrePaid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

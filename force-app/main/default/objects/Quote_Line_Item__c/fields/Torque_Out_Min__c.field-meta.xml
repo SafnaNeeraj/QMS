@@ -1,0 +1,4228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Torque_Out_Min__c</fullName>
+    <externalId>false</externalId>
+    <label>Torque-Out Min</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10mm</fullName>
+                <default>false</default>
+                <label>10mm</label>
+            </value>
+            <value>
+                <fullName>11mm</fullName>
+                <default>false</default>
+                <label>11mm</label>
+            </value>
+            <value>
+                <fullName>12mm</fullName>
+                <default>false</default>
+                <label>12mm</label>
+            </value>
+            <value>
+                <fullName>13mm</fullName>
+                <default>false</default>
+                <label>13mm</label>
+            </value>
+            <value>
+                <fullName>14mm</fullName>
+                <default>false</default>
+                <label>14mm</label>
+            </value>
+            <value>
+                <fullName>15mm</fullName>
+                <default>false</default>
+                <label>15mm</label>
+            </value>
+            <value>
+                <fullName>10 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>10 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>10 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>10 nm</label>
+            </value>
+            <value>
+                <fullName>100 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>100 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>100 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>100 nm</label>
+            </value>
+            <value>
+                <fullName>101 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>101 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>101 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>101 nm</label>
+            </value>
+            <value>
+                <fullName>102 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>102 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>102 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>102 nm</label>
+            </value>
+            <value>
+                <fullName>103 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>103 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>103 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>103 nm</label>
+            </value>
+            <value>
+                <fullName>104 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>104 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>104 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>104 nm</label>
+            </value>
+            <value>
+                <fullName>105 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>105 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>105 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>105 nm</label>
+            </value>
+            <value>
+                <fullName>106 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>106 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>106 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>106 nm</label>
+            </value>
+            <value>
+                <fullName>107 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>107 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>107 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>107 nm</label>
+            </value>
+            <value>
+                <fullName>108 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>108 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>108 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>108 nm</label>
+            </value>
+            <value>
+                <fullName>109 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>109 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>109 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>109 nm</label>
+            </value>
+            <value>
+                <fullName>11 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>11 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>11 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>11 nm</label>
+            </value>
+            <value>
+                <fullName>110 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>110 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>110 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>110 nm</label>
+            </value>
+            <value>
+                <fullName>111 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>111 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>111 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>111 nm</label>
+            </value>
+            <value>
+                <fullName>112 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>112 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>112 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>112 nm</label>
+            </value>
+            <value>
+                <fullName>113 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>113 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>113 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>113 nm</label>
+            </value>
+            <value>
+                <fullName>114 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>114 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>114 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>114 nm</label>
+            </value>
+            <value>
+                <fullName>115 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>115 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>115 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>115 nm</label>
+            </value>
+            <value>
+                <fullName>116 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>116 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>116 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>116 nm</label>
+            </value>
+            <value>
+                <fullName>117 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>117 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>117 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>117 nm</label>
+            </value>
+            <value>
+                <fullName>118 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>118 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>118 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>118 nm</label>
+            </value>
+            <value>
+                <fullName>119 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>119 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>119 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>119 nm</label>
+            </value>
+            <value>
+                <fullName>12 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>12 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>12 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>12 nm</label>
+            </value>
+            <value>
+                <fullName>120 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>120 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>120 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>120 nm</label>
+            </value>
+            <value>
+                <fullName>121 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>121 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>121 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>121 nm</label>
+            </value>
+            <value>
+                <fullName>122 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>122 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>122 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>122 nm</label>
+            </value>
+            <value>
+                <fullName>123 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>123 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>123 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>123 nm</label>
+            </value>
+            <value>
+                <fullName>124 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>124 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>124 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>124 nm</label>
+            </value>
+            <value>
+                <fullName>125 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>125 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>125 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>125 nm</label>
+            </value>
+            <value>
+                <fullName>126 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>126 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>126 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>126 nm</label>
+            </value>
+            <value>
+                <fullName>127 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>127 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>127 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>127 nm</label>
+            </value>
+            <value>
+                <fullName>128 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>128 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>128 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>128 nm</label>
+            </value>
+            <value>
+                <fullName>129 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>129 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>129 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>129 nm</label>
+            </value>
+            <value>
+                <fullName>13 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>13 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>13 nm</label>
+            </value>
+            <value>
+                <fullName>130 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>130 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>130 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>130 nm</label>
+            </value>
+            <value>
+                <fullName>131 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>131 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>131 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>131 nm</label>
+            </value>
+            <value>
+                <fullName>132 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>132 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>132 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>132 nm</label>
+            </value>
+            <value>
+                <fullName>133 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>133 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>133 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>133 nm</label>
+            </value>
+            <value>
+                <fullName>134 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>134 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>134 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>134 nm</label>
+            </value>
+            <value>
+                <fullName>135 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>135 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>135 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>135 nm</label>
+            </value>
+            <value>
+                <fullName>136 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>136 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>136 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>136 nm</label>
+            </value>
+            <value>
+                <fullName>137 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>137 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>137 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>137 nm</label>
+            </value>
+            <value>
+                <fullName>138 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>138 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>138 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>138 nm</label>
+            </value>
+            <value>
+                <fullName>139 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>139 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>139 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>139 nm</label>
+            </value>
+            <value>
+                <fullName>14 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>14 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>14 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>14 nm</label>
+            </value>
+            <value>
+                <fullName>140 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>140 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>140 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>140 nm</label>
+            </value>
+            <value>
+                <fullName>141 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>141 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>141 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>141 nm</label>
+            </value>
+            <value>
+                <fullName>142 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>142 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>142 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>142 nm</label>
+            </value>
+            <value>
+                <fullName>143 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>143 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>143 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>143 nm</label>
+            </value>
+            <value>
+                <fullName>144 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>144 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>144 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>144 nm</label>
+            </value>
+            <value>
+                <fullName>145 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>145 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>145 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>145 nm</label>
+            </value>
+            <value>
+                <fullName>146 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>146 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>146 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>146 nm</label>
+            </value>
+            <value>
+                <fullName>147 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>147 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>147 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>147 nm</label>
+            </value>
+            <value>
+                <fullName>148 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>148 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>148 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>148 nm</label>
+            </value>
+            <value>
+                <fullName>149 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>149 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>149 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>149 nm</label>
+            </value>
+            <value>
+                <fullName>15 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>15 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>15 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>15 nm</label>
+            </value>
+            <value>
+                <fullName>150 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>150 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>150 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>150 nm</label>
+            </value>
+            <value>
+                <fullName>151 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>151 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>151 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>151 nm</label>
+            </value>
+            <value>
+                <fullName>152 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>152 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>152 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>152 nm</label>
+            </value>
+            <value>
+                <fullName>153 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>153 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>153 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>153 nm</label>
+            </value>
+            <value>
+                <fullName>154 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>154 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>154 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>154 nm</label>
+            </value>
+            <value>
+                <fullName>155 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>155 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>155 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>155 nm</label>
+            </value>
+            <value>
+                <fullName>156 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>156 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>156 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>156 nm</label>
+            </value>
+            <value>
+                <fullName>157 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>157 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>157 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>157 nm</label>
+            </value>
+            <value>
+                <fullName>158 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>158 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>158 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>158 nm</label>
+            </value>
+            <value>
+                <fullName>159 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>159 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>159 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>159 nm</label>
+            </value>
+            <value>
+                <fullName>16 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>16 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>16 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>16 nm</label>
+            </value>
+            <value>
+                <fullName>160 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>160 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>160 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>160 nm</label>
+            </value>
+            <value>
+                <fullName>161 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>161 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>161 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>161 nm</label>
+            </value>
+            <value>
+                <fullName>162 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>162 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>162 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>162 nm</label>
+            </value>
+            <value>
+                <fullName>163 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>163 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>163 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>163 nm</label>
+            </value>
+            <value>
+                <fullName>164 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>164 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>164 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>164 nm</label>
+            </value>
+            <value>
+                <fullName>165 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>165 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>165 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>165 nm</label>
+            </value>
+            <value>
+                <fullName>166 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>166 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>166 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>166 nm</label>
+            </value>
+            <value>
+                <fullName>167 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>167 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>167 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>167 nm</label>
+            </value>
+            <value>
+                <fullName>168 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>168 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>168 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>168 nm</label>
+            </value>
+            <value>
+                <fullName>169 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>169 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>169 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>169 nm</label>
+            </value>
+            <value>
+                <fullName>17 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>17 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>17 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>17 nm</label>
+            </value>
+            <value>
+                <fullName>170 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>170 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>170 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>170 nm</label>
+            </value>
+            <value>
+                <fullName>171 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>171 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>171 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>171 nm</label>
+            </value>
+            <value>
+                <fullName>172 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>172 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>172 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>172 nm</label>
+            </value>
+            <value>
+                <fullName>173 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>173 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>173 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>173 nm</label>
+            </value>
+            <value>
+                <fullName>174 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>174 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>174 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>174 nm</label>
+            </value>
+            <value>
+                <fullName>175 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>175 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>175 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>175 nm</label>
+            </value>
+            <value>
+                <fullName>176 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>176 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>176 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>176 nm</label>
+            </value>
+            <value>
+                <fullName>177 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>177 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>177 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>177 nm</label>
+            </value>
+            <value>
+                <fullName>178 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>178 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>178 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>178 nm</label>
+            </value>
+            <value>
+                <fullName>179 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>179 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>179 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>179 nm</label>
+            </value>
+            <value>
+                <fullName>18 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>18 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>18 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>18 nm</label>
+            </value>
+            <value>
+                <fullName>180 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>180 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>180 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>180 nm</label>
+            </value>
+            <value>
+                <fullName>181 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>181 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>181 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>181 nm</label>
+            </value>
+            <value>
+                <fullName>182 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>182 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>182 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>182 nm</label>
+            </value>
+            <value>
+                <fullName>183 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>183 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>183 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>183 nm</label>
+            </value>
+            <value>
+                <fullName>184 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>184 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>184 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>184 nm</label>
+            </value>
+            <value>
+                <fullName>185 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>185 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>185 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>185 nm</label>
+            </value>
+            <value>
+                <fullName>186 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>186 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>186 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>186 nm</label>
+            </value>
+            <value>
+                <fullName>187 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>187 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>187 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>187 nm</label>
+            </value>
+            <value>
+                <fullName>188 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>188 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>188 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>188 nm</label>
+            </value>
+            <value>
+                <fullName>189 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>189 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>189 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>189 nm</label>
+            </value>
+            <value>
+                <fullName>19 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>19 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>19 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>19 nm</label>
+            </value>
+            <value>
+                <fullName>190 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>190 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>190 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>190 nm</label>
+            </value>
+            <value>
+                <fullName>191 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>191 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>191 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>191 nm</label>
+            </value>
+            <value>
+                <fullName>192 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>192 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>192 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>192 nm</label>
+            </value>
+            <value>
+                <fullName>193 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>193 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>193 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>193 nm</label>
+            </value>
+            <value>
+                <fullName>194 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>194 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>194 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>194 nm</label>
+            </value>
+            <value>
+                <fullName>195 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>195 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>195 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>195 nm</label>
+            </value>
+            <value>
+                <fullName>196 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>196 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>196 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>196 nm</label>
+            </value>
+            <value>
+                <fullName>197 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>197 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>197 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>197 nm</label>
+            </value>
+            <value>
+                <fullName>198 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>198 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>198 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>198 nm</label>
+            </value>
+            <value>
+                <fullName>199 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>199 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>199 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>199 nm</label>
+            </value>
+            <value>
+                <fullName>20 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>20 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>20 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>20 nm</label>
+            </value>
+            <value>
+                <fullName>200 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>200 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>200 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>200 nm</label>
+            </value>
+            <value>
+                <fullName>201 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>201 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>201 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>201 nm</label>
+            </value>
+            <value>
+                <fullName>202 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>202 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>202 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>202 nm</label>
+            </value>
+            <value>
+                <fullName>203 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>203 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>203 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>203 nm</label>
+            </value>
+            <value>
+                <fullName>204 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>204 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>204 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>204 nm</label>
+            </value>
+            <value>
+                <fullName>205 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>205 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>205 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>205 nm</label>
+            </value>
+            <value>
+                <fullName>206 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>206 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>206 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>206 nm</label>
+            </value>
+            <value>
+                <fullName>207 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>207 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>207 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>207 nm</label>
+            </value>
+            <value>
+                <fullName>208 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>208 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>208 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>208 nm</label>
+            </value>
+            <value>
+                <fullName>209 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>209 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>209 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>209 nm</label>
+            </value>
+            <value>
+                <fullName>21 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>21 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>21 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>21 nm</label>
+            </value>
+            <value>
+                <fullName>210 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>210 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>210 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>210 nm</label>
+            </value>
+            <value>
+                <fullName>211 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>211 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>211 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>211 nm</label>
+            </value>
+            <value>
+                <fullName>212 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>212 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>212 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>212 nm</label>
+            </value>
+            <value>
+                <fullName>213 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>213 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>213 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>213 nm</label>
+            </value>
+            <value>
+                <fullName>214 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>214 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>214 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>214 nm</label>
+            </value>
+            <value>
+                <fullName>215 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>215 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>215 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>215 nm</label>
+            </value>
+            <value>
+                <fullName>216 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>216 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>216 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>216 nm</label>
+            </value>
+            <value>
+                <fullName>217 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>217 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>217 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>217 nm</label>
+            </value>
+            <value>
+                <fullName>218 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>218 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>218 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>218 nm</label>
+            </value>
+            <value>
+                <fullName>219 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>219 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>219 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>219 nm</label>
+            </value>
+            <value>
+                <fullName>22 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>22 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>22 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>22 nm</label>
+            </value>
+            <value>
+                <fullName>220 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>220 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>220 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>220 nm</label>
+            </value>
+            <value>
+                <fullName>221 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>221 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>221 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>221 nm</label>
+            </value>
+            <value>
+                <fullName>222 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>222 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>222 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>222 nm</label>
+            </value>
+            <value>
+                <fullName>223 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>223 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>223 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>223 nm</label>
+            </value>
+            <value>
+                <fullName>224 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>224 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>224 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>224 nm</label>
+            </value>
+            <value>
+                <fullName>225 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>225 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>225 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>225 nm</label>
+            </value>
+            <value>
+                <fullName>226 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>226 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>226 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>226 nm</label>
+            </value>
+            <value>
+                <fullName>227 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>227 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>227 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>227 nm</label>
+            </value>
+            <value>
+                <fullName>228 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>228 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>228 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>228 nm</label>
+            </value>
+            <value>
+                <fullName>229 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>229 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>229 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>229 nm</label>
+            </value>
+            <value>
+                <fullName>23 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>23 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>23 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>23 nm</label>
+            </value>
+            <value>
+                <fullName>230 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>230 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>230 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>230 nm</label>
+            </value>
+            <value>
+                <fullName>231 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>231 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>231 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>231 nm</label>
+            </value>
+            <value>
+                <fullName>232 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>232 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>232 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>232 nm</label>
+            </value>
+            <value>
+                <fullName>233 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>233 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>233 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>233 nm</label>
+            </value>
+            <value>
+                <fullName>234 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>234 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>234 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>234 nm</label>
+            </value>
+            <value>
+                <fullName>235 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>235 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>235 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>235 nm</label>
+            </value>
+            <value>
+                <fullName>236 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>236 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>236 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>236 nm</label>
+            </value>
+            <value>
+                <fullName>237 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>237 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>237 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>237 nm</label>
+            </value>
+            <value>
+                <fullName>238 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>238 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>238 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>238 nm</label>
+            </value>
+            <value>
+                <fullName>239 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>239 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>239 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>239 nm</label>
+            </value>
+            <value>
+                <fullName>24 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>24 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>24 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>24 nm</label>
+            </value>
+            <value>
+                <fullName>240 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>240 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>240 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>240 nm</label>
+            </value>
+            <value>
+                <fullName>241 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>241 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>241 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>241 nm</label>
+            </value>
+            <value>
+                <fullName>242 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>242 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>242 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>242 nm</label>
+            </value>
+            <value>
+                <fullName>243 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>243 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>243 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>243 nm</label>
+            </value>
+            <value>
+                <fullName>244 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>244 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>244 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>244 nm</label>
+            </value>
+            <value>
+                <fullName>245 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>245 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>245 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>245 nm</label>
+            </value>
+            <value>
+                <fullName>246 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>246 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>246 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>246 nm</label>
+            </value>
+            <value>
+                <fullName>247 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>247 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>247 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>247 nm</label>
+            </value>
+            <value>
+                <fullName>248 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>248 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>248 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>248 nm</label>
+            </value>
+            <value>
+                <fullName>249 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>249 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>249 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>249 nm</label>
+            </value>
+            <value>
+                <fullName>25 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>25 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>25 nm</label>
+            </value>
+            <value>
+                <fullName>250 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>250 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>250 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>250 nm</label>
+            </value>
+            <value>
+                <fullName>251 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>251 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>251 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>251 nm</label>
+            </value>
+            <value>
+                <fullName>252 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>252 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>252 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>252 nm</label>
+            </value>
+            <value>
+                <fullName>253 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>253 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>253 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>253 nm</label>
+            </value>
+            <value>
+                <fullName>254 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>254 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>254 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>254 nm</label>
+            </value>
+            <value>
+                <fullName>255 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>255 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>255 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>255 nm</label>
+            </value>
+            <value>
+                <fullName>256 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>256 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>256 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>256 nm</label>
+            </value>
+            <value>
+                <fullName>257 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>257 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>257 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>257 nm</label>
+            </value>
+            <value>
+                <fullName>258 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>258 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>258 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>258 nm</label>
+            </value>
+            <value>
+                <fullName>259 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>259 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>259 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>259 nm</label>
+            </value>
+            <value>
+                <fullName>26 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>26 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>26 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>26 nm</label>
+            </value>
+            <value>
+                <fullName>260 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>260 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>260 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>260 nm</label>
+            </value>
+            <value>
+                <fullName>261 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>261 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>261 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>261 nm</label>
+            </value>
+            <value>
+                <fullName>262 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>262 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>262 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>262 nm</label>
+            </value>
+            <value>
+                <fullName>263 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>263 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>263 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>263 nm</label>
+            </value>
+            <value>
+                <fullName>264 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>264 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>264 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>264 nm</label>
+            </value>
+            <value>
+                <fullName>265 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>265 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>265 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>265 nm</label>
+            </value>
+            <value>
+                <fullName>266 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>266 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>266 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>266 nm</label>
+            </value>
+            <value>
+                <fullName>267 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>267 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>267 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>267 nm</label>
+            </value>
+            <value>
+                <fullName>268 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>268 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>268 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>268 nm</label>
+            </value>
+            <value>
+                <fullName>269 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>269 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>269 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>269 nm</label>
+            </value>
+            <value>
+                <fullName>27 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>27 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>27 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>27 nm</label>
+            </value>
+            <value>
+                <fullName>270 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>270 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>270 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>270 nm</label>
+            </value>
+            <value>
+                <fullName>271 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>271 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>271 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>271 nm</label>
+            </value>
+            <value>
+                <fullName>272 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>272 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>272 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>272 nm</label>
+            </value>
+            <value>
+                <fullName>273 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>273 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>273 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>273 nm</label>
+            </value>
+            <value>
+                <fullName>274 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>274 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>274 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>274 nm</label>
+            </value>
+            <value>
+                <fullName>275 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>275 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>275 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>275 nm</label>
+            </value>
+            <value>
+                <fullName>276 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>276 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>276 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>276 nm</label>
+            </value>
+            <value>
+                <fullName>277 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>277 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>277 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>277 nm</label>
+            </value>
+            <value>
+                <fullName>278 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>278 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>278 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>278 nm</label>
+            </value>
+            <value>
+                <fullName>279 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>279 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>279 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>279 nm</label>
+            </value>
+            <value>
+                <fullName>28 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>28 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>28 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>28 nm</label>
+            </value>
+            <value>
+                <fullName>280 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>280 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>280 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>280 nm</label>
+            </value>
+            <value>
+                <fullName>281 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>281 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>281 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>281 nm</label>
+            </value>
+            <value>
+                <fullName>282 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>282 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>282 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>282 nm</label>
+            </value>
+            <value>
+                <fullName>283 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>283 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>283 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>283 nm</label>
+            </value>
+            <value>
+                <fullName>284 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>284 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>284 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>284 nm</label>
+            </value>
+            <value>
+                <fullName>285 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>285 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>285 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>285 nm</label>
+            </value>
+            <value>
+                <fullName>286 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>286 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>286 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>286 nm</label>
+            </value>
+            <value>
+                <fullName>287 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>287 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>287 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>287 nm</label>
+            </value>
+            <value>
+                <fullName>288 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>288 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>288 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>288 nm</label>
+            </value>
+            <value>
+                <fullName>289 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>289 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>289 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>289 nm</label>
+            </value>
+            <value>
+                <fullName>29 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>29 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>29 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>29 nm</label>
+            </value>
+            <value>
+                <fullName>290 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>290 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>290 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>290 nm</label>
+            </value>
+            <value>
+                <fullName>291 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>291 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>291 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>291 nm</label>
+            </value>
+            <value>
+                <fullName>292 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>292 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>292 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>292 nm</label>
+            </value>
+            <value>
+                <fullName>293 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>293 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>293 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>293 nm</label>
+            </value>
+            <value>
+                <fullName>294 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>294 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>294 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>294 nm</label>
+            </value>
+            <value>
+                <fullName>295 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>295 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>295 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>295 nm</label>
+            </value>
+            <value>
+                <fullName>296 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>296 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>296 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>296 nm</label>
+            </value>
+            <value>
+                <fullName>297 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>297 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>297 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>297 nm</label>
+            </value>
+            <value>
+                <fullName>298 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>298 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>298 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>298 nm</label>
+            </value>
+            <value>
+                <fullName>299 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>299 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>299 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>299 nm</label>
+            </value>
+            <value>
+                <fullName>30 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>30 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>30 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>30 nm</label>
+            </value>
+            <value>
+                <fullName>300 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>300 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>300 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>300 nm</label>
+            </value>
+            <value>
+                <fullName>301 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>301 nm</label>
+            </value>
+            <value>
+                <fullName>302 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>302 nm</label>
+            </value>
+            <value>
+                <fullName>303 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>303 nm</label>
+            </value>
+            <value>
+                <fullName>304 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>304 nm</label>
+            </value>
+            <value>
+                <fullName>305 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>305 nm</label>
+            </value>
+            <value>
+                <fullName>306 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>306 nm</label>
+            </value>
+            <value>
+                <fullName>307 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>307 nm</label>
+            </value>
+            <value>
+                <fullName>308 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>308 nm</label>
+            </value>
+            <value>
+                <fullName>309 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>309 nm</label>
+            </value>
+            <value>
+                <fullName>31 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>31 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>31 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>31 nm</label>
+            </value>
+            <value>
+                <fullName>310 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>310 nm</label>
+            </value>
+            <value>
+                <fullName>311 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>311 nm</label>
+            </value>
+            <value>
+                <fullName>312 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>312 nm</label>
+            </value>
+            <value>
+                <fullName>313 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>313 nm</label>
+            </value>
+            <value>
+                <fullName>314 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>314 nm</label>
+            </value>
+            <value>
+                <fullName>315 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>315 nm</label>
+            </value>
+            <value>
+                <fullName>316 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>316 nm</label>
+            </value>
+            <value>
+                <fullName>317 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>317 nm</label>
+            </value>
+            <value>
+                <fullName>318 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>318 nm</label>
+            </value>
+            <value>
+                <fullName>319 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>319 nm</label>
+            </value>
+            <value>
+                <fullName>32 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>32 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>32 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>32 nm</label>
+            </value>
+            <value>
+                <fullName>320 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>320 nm</label>
+            </value>
+            <value>
+                <fullName>321 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>321 nm</label>
+            </value>
+            <value>
+                <fullName>322 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>322 nm</label>
+            </value>
+            <value>
+                <fullName>323 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>323 nm</label>
+            </value>
+            <value>
+                <fullName>324 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>324 nm</label>
+            </value>
+            <value>
+                <fullName>325 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>325 nm</label>
+            </value>
+            <value>
+                <fullName>326 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>326 nm</label>
+            </value>
+            <value>
+                <fullName>327 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>327 nm</label>
+            </value>
+            <value>
+                <fullName>328 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>328 nm</label>
+            </value>
+            <value>
+                <fullName>329 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>329 nm</label>
+            </value>
+            <value>
+                <fullName>33 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>33 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>33 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>33 nm</label>
+            </value>
+            <value>
+                <fullName>330 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>330 nm</label>
+            </value>
+            <value>
+                <fullName>331 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>331 nm</label>
+            </value>
+            <value>
+                <fullName>332 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>332 nm</label>
+            </value>
+            <value>
+                <fullName>333 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>333 nm</label>
+            </value>
+            <value>
+                <fullName>334 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>334 nm</label>
+            </value>
+            <value>
+                <fullName>335 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>335 nm</label>
+            </value>
+            <value>
+                <fullName>336 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>336 nm</label>
+            </value>
+            <value>
+                <fullName>337 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>337 nm</label>
+            </value>
+            <value>
+                <fullName>338 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>338 nm</label>
+            </value>
+            <value>
+                <fullName>339 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>339 nm</label>
+            </value>
+            <value>
+                <fullName>34 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>34 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>34 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>34 nm</label>
+            </value>
+            <value>
+                <fullName>340 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>340 nm</label>
+            </value>
+            <value>
+                <fullName>341 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>341 nm</label>
+            </value>
+            <value>
+                <fullName>342 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>342 nm</label>
+            </value>
+            <value>
+                <fullName>343 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>343 nm</label>
+            </value>
+            <value>
+                <fullName>344 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>344 nm</label>
+            </value>
+            <value>
+                <fullName>345 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>345 nm</label>
+            </value>
+            <value>
+                <fullName>346 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>346 nm</label>
+            </value>
+            <value>
+                <fullName>347 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>347 nm</label>
+            </value>
+            <value>
+                <fullName>348 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>348 nm</label>
+            </value>
+            <value>
+                <fullName>349 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>349 nm</label>
+            </value>
+            <value>
+                <fullName>35 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>35 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>35 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>35 nm</label>
+            </value>
+            <value>
+                <fullName>350 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>350 nm</label>
+            </value>
+            <value>
+                <fullName>351 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>351 nm</label>
+            </value>
+            <value>
+                <fullName>352 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>352 nm</label>
+            </value>
+            <value>
+                <fullName>353 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>353 nm</label>
+            </value>
+            <value>
+                <fullName>354 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>354 nm</label>
+            </value>
+            <value>
+                <fullName>355 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>355 nm</label>
+            </value>
+            <value>
+                <fullName>356 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>356 nm</label>
+            </value>
+            <value>
+                <fullName>357 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>357 nm</label>
+            </value>
+            <value>
+                <fullName>358 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>358 nm</label>
+            </value>
+            <value>
+                <fullName>359 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>359 nm</label>
+            </value>
+            <value>
+                <fullName>36 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>36 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>36 nm</label>
+            </value>
+            <value>
+                <fullName>360 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>360 nm</label>
+            </value>
+            <value>
+                <fullName>361 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>361 nm</label>
+            </value>
+            <value>
+                <fullName>362 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>362 nm</label>
+            </value>
+            <value>
+                <fullName>363 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>363 nm</label>
+            </value>
+            <value>
+                <fullName>364 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>364 nm</label>
+            </value>
+            <value>
+                <fullName>365 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>365 nm</label>
+            </value>
+            <value>
+                <fullName>366 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>366 nm</label>
+            </value>
+            <value>
+                <fullName>367 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>367 nm</label>
+            </value>
+            <value>
+                <fullName>368 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>368 nm</label>
+            </value>
+            <value>
+                <fullName>369 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>369 nm</label>
+            </value>
+            <value>
+                <fullName>37 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>37 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>37 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>37 nm</label>
+            </value>
+            <value>
+                <fullName>370 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>370 nm</label>
+            </value>
+            <value>
+                <fullName>371 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>371 nm</label>
+            </value>
+            <value>
+                <fullName>372 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>372 nm</label>
+            </value>
+            <value>
+                <fullName>373 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>373 nm</label>
+            </value>
+            <value>
+                <fullName>374 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>374 nm</label>
+            </value>
+            <value>
+                <fullName>375 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>375 nm</label>
+            </value>
+            <value>
+                <fullName>376 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>376 nm</label>
+            </value>
+            <value>
+                <fullName>377 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>377 nm</label>
+            </value>
+            <value>
+                <fullName>378 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>378 nm</label>
+            </value>
+            <value>
+                <fullName>379 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>379 nm</label>
+            </value>
+            <value>
+                <fullName>38 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>38 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>38 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>38 nm</label>
+            </value>
+            <value>
+                <fullName>380 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>380 nm</label>
+            </value>
+            <value>
+                <fullName>381 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>381 nm</label>
+            </value>
+            <value>
+                <fullName>382 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>382 nm</label>
+            </value>
+            <value>
+                <fullName>383 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>383 nm</label>
+            </value>
+            <value>
+                <fullName>384 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>384 nm</label>
+            </value>
+            <value>
+                <fullName>385 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>385 nm</label>
+            </value>
+            <value>
+                <fullName>386 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>386 nm</label>
+            </value>
+            <value>
+                <fullName>387 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>387 nm</label>
+            </value>
+            <value>
+                <fullName>388 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>388 nm</label>
+            </value>
+            <value>
+                <fullName>389 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>389 nm</label>
+            </value>
+            <value>
+                <fullName>39 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>39 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>39 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>39 nm</label>
+            </value>
+            <value>
+                <fullName>390 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>390 nm</label>
+            </value>
+            <value>
+                <fullName>391 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>391 nm</label>
+            </value>
+            <value>
+                <fullName>392 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>392 nm</label>
+            </value>
+            <value>
+                <fullName>393 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>393 nm</label>
+            </value>
+            <value>
+                <fullName>394 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>394 nm</label>
+            </value>
+            <value>
+                <fullName>395 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>395 nm</label>
+            </value>
+            <value>
+                <fullName>396 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>396 nm</label>
+            </value>
+            <value>
+                <fullName>397 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>397 nm</label>
+            </value>
+            <value>
+                <fullName>398 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>398 nm</label>
+            </value>
+            <value>
+                <fullName>399 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>399 nm</label>
+            </value>
+            <value>
+                <fullName>40 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>40 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>40 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>40 nm</label>
+            </value>
+            <value>
+                <fullName>400 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>400 nm</label>
+            </value>
+            <value>
+                <fullName>401 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>401 nm</label>
+            </value>
+            <value>
+                <fullName>402 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>402 nm</label>
+            </value>
+            <value>
+                <fullName>403 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>403 nm</label>
+            </value>
+            <value>
+                <fullName>404 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>404 nm</label>
+            </value>
+            <value>
+                <fullName>405 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>405 nm</label>
+            </value>
+            <value>
+                <fullName>406 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>406 nm</label>
+            </value>
+            <value>
+                <fullName>407 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>407 nm</label>
+            </value>
+            <value>
+                <fullName>408 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>408 nm</label>
+            </value>
+            <value>
+                <fullName>409 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>409 nm</label>
+            </value>
+            <value>
+                <fullName>41 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>41 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>41 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>41 nm</label>
+            </value>
+            <value>
+                <fullName>410 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>410 nm</label>
+            </value>
+            <value>
+                <fullName>42 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>42 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>42 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>42 nm</label>
+            </value>
+            <value>
+                <fullName>43 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>43 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>43 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>43 nm</label>
+            </value>
+            <value>
+                <fullName>44 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>44 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>44 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>44 nm</label>
+            </value>
+            <value>
+                <fullName>45 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>45 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 nm</label>
+            </value>
+            <value>
+                <fullName>46 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>46 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46 nm</label>
+            </value>
+            <value>
+                <fullName>47 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>47 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>47 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>47 nm</label>
+            </value>
+            <value>
+                <fullName>48 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>48 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>48 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>48 nm</label>
+            </value>
+            <value>
+                <fullName>49 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>49 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>49 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>49 nm</label>
+            </value>
+            <value>
+                <fullName>5 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>5 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>50 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>50 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>50 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>50 nm</label>
+            </value>
+            <value>
+                <fullName>51 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>51 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>51 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>51 nm</label>
+            </value>
+            <value>
+                <fullName>52 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>52 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>52 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>52 nm</label>
+            </value>
+            <value>
+                <fullName>53 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>53 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>53 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>53 nm</label>
+            </value>
+            <value>
+                <fullName>54 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>54 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>54 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>54 nm</label>
+            </value>
+            <value>
+                <fullName>55 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>55 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>55 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>55 nm</label>
+            </value>
+            <value>
+                <fullName>56 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>56 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>56 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>56 nm</label>
+            </value>
+            <value>
+                <fullName>57 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>57 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>57 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>57 nm</label>
+            </value>
+            <value>
+                <fullName>58 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>58 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>58 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>58 nm</label>
+            </value>
+            <value>
+                <fullName>59 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>59 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>59 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>59 nm</label>
+            </value>
+            <value>
+                <fullName>6 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>6 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>60 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>60 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>60 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>60 nm</label>
+            </value>
+            <value>
+                <fullName>61 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>61 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>61 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>61 nm</label>
+            </value>
+            <value>
+                <fullName>62 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>62 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>62 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>62 nm</label>
+            </value>
+            <value>
+                <fullName>63 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>63 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>63 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>63 nm</label>
+            </value>
+            <value>
+                <fullName>64 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>64 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>64 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>64 nm</label>
+            </value>
+            <value>
+                <fullName>65 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>65 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>65 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>65 nm</label>
+            </value>
+            <value>
+                <fullName>66 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>66 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>66 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>66 nm</label>
+            </value>
+            <value>
+                <fullName>67 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>67 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>67 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>67 nm</label>
+            </value>
+            <value>
+                <fullName>68 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>68 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>68 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>68 nm</label>
+            </value>
+            <value>
+                <fullName>69 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>69 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>69 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>69 nm</label>
+            </value>
+            <value>
+                <fullName>7 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>7 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>70 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>70 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>70 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>70 nm</label>
+            </value>
+            <value>
+                <fullName>71 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>71 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>71 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>71 nm</label>
+            </value>
+            <value>
+                <fullName>72 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>72 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>72 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>72 nm</label>
+            </value>
+            <value>
+                <fullName>73 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>73 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>73 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>73 nm</label>
+            </value>
+            <value>
+                <fullName>74 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>74 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>74 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>74 nm</label>
+            </value>
+            <value>
+                <fullName>75 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>75 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>75 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>75 nm</label>
+            </value>
+            <value>
+                <fullName>76 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>76 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>76 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>76 nm</label>
+            </value>
+            <value>
+                <fullName>77 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>77 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>77 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>77 nm</label>
+            </value>
+            <value>
+                <fullName>78 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>78 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>78 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>78 nm</label>
+            </value>
+            <value>
+                <fullName>79 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>79 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>79 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>79 nm</label>
+            </value>
+            <value>
+                <fullName>8 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>8 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>80 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>80 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>80 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>80 nm</label>
+            </value>
+            <value>
+                <fullName>81 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>81 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>81 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>81 nm</label>
+            </value>
+            <value>
+                <fullName>82 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>82 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>82 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>82 nm</label>
+            </value>
+            <value>
+                <fullName>83 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>83 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>83 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>83 nm</label>
+            </value>
+            <value>
+                <fullName>84 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>84 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>84 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>84 nm</label>
+            </value>
+            <value>
+                <fullName>85 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>85 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>85 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>85 nm</label>
+            </value>
+            <value>
+                <fullName>86 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>86 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>86 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>86 nm</label>
+            </value>
+            <value>
+                <fullName>87 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>87 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>87 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>87 nm</label>
+            </value>
+            <value>
+                <fullName>88 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>88 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>88 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>88 nm</label>
+            </value>
+            <value>
+                <fullName>89 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>89 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>89 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>89 nm</label>
+            </value>
+            <value>
+                <fullName>9 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>9 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>90 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>90 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>90 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>90 nm</label>
+            </value>
+            <value>
+                <fullName>91 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>91 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>91 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>91 nm</label>
+            </value>
+            <value>
+                <fullName>92 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>92 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>92 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>92 nm</label>
+            </value>
+            <value>
+                <fullName>93 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>93 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>93 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>93 nm</label>
+            </value>
+            <value>
+                <fullName>94 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>94 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>94 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>94 nm</label>
+            </value>
+            <value>
+                <fullName>95 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>95 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>95 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>95 nm</label>
+            </value>
+            <value>
+                <fullName>96 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>96 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>96 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>96 nm</label>
+            </value>
+            <value>
+                <fullName>97 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>97 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>97 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>97 nm</label>
+            </value>
+            <value>
+                <fullName>98 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>98 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>98 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>98 nm</label>
+            </value>
+            <value>
+                <fullName>99 lbf/ft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>99 lbf/ft</label>
+            </value>
+            <value>
+                <fullName>99 nm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>99 nm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

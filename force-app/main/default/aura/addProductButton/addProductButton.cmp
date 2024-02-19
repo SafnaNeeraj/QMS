@@ -1,0 +1,19 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader">
+    <aura:attribute name="showOption1" type="Boolean" default="false" />
+    <aura:attribute name="showOption2" type="Boolean" default="false" />
+
+   <div class="slds-grid slds-gutters">
+    <lightning:button variant="base" label="SPAC" onclick="{!c.showOption1Component}" class="{!v.showOption1 ? 'slds-is-selected large-bold-button' : ''}" />
+    <lightning:button variant="base" label="Non-SPAC" onclick="{!c.showOption2Component}" class="{!v.showOption2 ? 'slds-is-selected large-bold-button' : ''}" />
+</div>
+
+
+    <div>
+        <aura:if isTrue="{!v.showOption1}">
+            <c:addProduct />
+        </aura:if>
+        <aura:if isTrue="{!v.showOption2}">
+            <c:nonSpacComponent />
+        </aura:if>
+    </div>
+</aura:component>

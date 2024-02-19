@@ -1,0 +1,72 @@
+.dummy{
+	color : black;
+}
+/* Add any additional styling you want for your table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.column-header, .column-cell {
+    padding: 8px; /* Adjust padding as needed */
+    text-align: center; /* Center the text in the cells if desired */
+}
+
+.column-header {
+    background-color: #f2f2f2; /* Set header background color */
+}
+
+/* Add a single-line border to columns */
+.column-header::after,
+.column-cell::after {
+    content: "";
+    display: block;
+    border-left: 1px solid #000; /* Set the color and style of the border */
+    height: 100%;
+    margin-left: 10px; /* Adjust margin to control the space between columns */
+}
+
+/* Remove the border from the first column */
+.column-header:first-child::after,
+.column-cell:first-child::after {
+    border: none;
+    margin-left: 0;
+}
+.blue-text-section {
+    background-color: #f3f5f7e3; /* Blue background color */
+    color: #0070d2e3; /* White text color */
+    padding: 10px; /* Adjust padding as needed */
+	
+}
+.bold-label {
+    font-weight: bold;
+}
+.centered-title .slds-card__header {
+    text-align: center;
+}
+.small-input .slds-input {
+    width: 100px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    font-size: 12px; /* Adjust the font size as needed */
+}
+.left-aligned-text {
+    text-align: left;
+}
+.spaced-radio {
+    margin-right: 16px; /* Adjust the margin as needed to create the desired spacing */
+}
+.footer {
+    background-color: #f3f5f7e3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 95% !important;
+    margin: 0 auto;
+}
+.required-field {
+    color: red;
+    margin-right: 2px; /* Adjust the margin as needed to control spacing */
+}

@@ -1,0 +1,210 @@
+<template>
+
+
+
+	<template if:true={isModalOpen1}>
+
+		<!-- Modal/Popup Box LWC starts here -->
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+			<div class="slds-modal__container">
+				<!-- Modal/Popup Box LWC header here -->
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal1}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+					<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"><b>Process Routing</b>
+					</h2>
+				</header>
+				<!-- Modal/Popup Box LWC body starts here -->
+				<!-- Modal/Popup Box LWC body starts here -->
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					<lightning-card>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<lightning-layout>
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Customer:</span></br>
+									<span>{customer}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Buyer:</span></br>
+									<span>{buyer}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Platform:</span></br>
+									<span>{platform}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">OEM:</span></br>
+									<span>{oem}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">SOP:</span></br>
+									<span>{sop}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">EOP:</span></br>
+									<span>{eop}</span>
+								</lightning-layout-item>
+
+							</lightning-layout>
+						</div>
+
+
+					
+
+						<!-- -----------Spinner------ -->
+
+						<template if:true={spinnerStatus}>
+							<div class="slds-is-relative">
+								<section class="slds-modal slds-fade-in-open">
+									<lightning-spinner variant="brand" alternative-text="Loading...">
+									</lightning-spinner>
+								</section>
+							</div>
+						</template>
+
+						<!-- -----------Custom Table------ -->
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+							<p style="background: #c5dcf0e3 ; padding:10px"><b>Process Routing:(Like Part#)</b></p>
+							<lightning-card>
+								<div class="slds-grid slds-grid_align-end slds-p-around_medium">
+									<lightning-button label="Add Row" variant="neutral" onclick={addRow}>
+									</lightning-button>
+								</div>
+
+
+								
+							  <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped" style=" overflow-x: auto;white-space: nowrap;display: block;">
+                <thead>
+                <tr class="slds-line-height_reset">
+					<th class="" scope="col">
+                        S.No
+                    </th>
+                    <!-- <th class="" scope="col">
+                        ID
+                    </th> -->
+                    <th class="" scope="col">
+                      Operation
+                    </th>
+                    <th class="" scope="col">
+                       Work Center
+                    </th>
+                    <th class="" scope="col">
+                       Supplier
+                    </th>
+                    <th class="" scope="col">
+                        Outside Cost(CAD)
+                    </th>
+                    <th class="" scope="col">
+                        Rate (Pcs/hr)
+                    </th>
+                    <th class="" scope="col">
+                       Direct Labout Cost(CAD)
+                    </th>
+                    <th class="" scope="col">
+                        Variable Cost(CAD)
+                    </th>
+					<th class="" scope="col">
+                       Overhead Cost(CAD)
+                    </th>
+                    <th class="" scope="col">
+                        Delete
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={processdata} for:item="it" for:index="indx">
+                    <tr class="slds-hint-parent" key = {it.Id}>
+						<td class="counterCell" style="min-width: 150px; padding-bottom:15px;"></td>
+                        <!-- <td data-label="Spec File">
+                            <div class="slds-cell-wrap">
+						<lightning-input type="text" variant="standard"  style="min-width: 150px; padding-bottom:15px;" name="Id" value={it.Id}></lightning-input>		</div>
+                        </td> -->
+                        <td data-label="Spec File">
+                            <div class="slds-cell-wrap">
+                                 <lightning-combobox data-id={indx} style="min-width: 150px;padding-bottom:15px;padding-top:15px;" name={it.Id}   variant = "label-hidden" label="Operator" value={it.Operation__c} placeholder="Select Option"  options={operationValueList} onchange={handleChange} ></lightning-combobox>
+                                
+                                
+                                </div>
+                        </td>
+                        <td data-label= "File Name">
+                            <div class="slds-cell-wrap">       <lightning-combobox data-id={indx} name={it.Id}  style="min-width: 150px;padding-bottom:15px; padding-top:15px;"  variant = "label-hidden" label="WorkCenter"  value={it.Work_Center__c} placeholder="Select Work Center"  options={workCenterValueList} onchange={handleChange} ></lightning-combobox>
+                                
+                                </div>
+                        </td>
+                        <td data-label="File Type">
+                            <div class="slds-cell-wrap">  <lightning-combobox data-id={indx} name={it.Id}  style="min-width: 150px;padding-bottom:15px;padding-top:15px;" value={it.Supplier__c} variant = "label-hidden" label="Supplier"  placeholder="Select Supplier"  options={supplervaluelist} onchange={handleChange} ></lightning-combobox>
+                                </div>
+                        </td>
+                         <td data-label="File Extension">
+                            <div class="slds-cell-wrap">	<lightning-input type="text"  style="min-width: 150px; padding-bottom:15px;padding-top:15px;"  variant = "label-hidden" data-id={indx} name={it.Id} label = "Outside" value={it.Outside_Cost_CAD__c} onchange={handleChange}></lightning-input>		</div>
+
+                        </td>
+                         <td data-label="File Extension">
+                            <div class="slds-cell-wrap"> 	<lightning-input type="text"  variant = "label-hidden"  style="min-width: 150px;padding-bottom:15px; padding-top:15px;"  data-id={indx} name={it.Id} label = "Rate" value={it.Rate_Pcs_hr__c} onchange={handleChange}></lightning-input>		</div>
+
+							
+                        </td>
+                         <td data-label="File Extension">
+                            <div class="slds-cell-wrap">	<lightning-input type="text"  variant = "label-hidden"  style="min-width: 150px;padding-bottom:15px;padding-top:15px; "  data-id={indx} name={it.Id} label = "Direct" value={it.Direct_Labour_Cost__c} onchange={handleChange}></lightning-input>		</div>
+			
+						
+                        </td>
+                        <td data-label="File Extension">
+                                  <div class="slds-cell-wrap">	<lightning-input type="text"  variant = "label-hidden"  style="min-width: 150px;padding-bottom:15px;padding-top:15px;"  data-id={indx} name={it.Id} label = "Variable" value={it.Variable_Cost__c} onchange={handleChange}></lightning-input>		</div>
+
+                        </td>
+						           <td data-label="File Extension">
+                                  <div class="slds-cell-wrap">	<lightning-input type="text"  variant = "label-hidden"  style="min-width: 150px;padding-bottom:15px;padding-top:15px;"  data-id={indx} name={it.Id} label = "Overhead" value={it.Overhead_Cost_CAD__c} onchange={handleChange}></lightning-input>		</div>
+
+                        </td>
+                         <td data-label="File Extension">
+                            <div class="slds-cell-wrap"><lightning-button-icon icon-name="utility:delete"    alternative-text="Delete"   data-id={indx} name={it.Id} class="slds-m-left_xx-small" title="Delete" onclick={handleDelete}></lightning-button-icon></div>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+							
+								<!--<div class="slds-p-top_x-large">
+								<center>
+									<lightning-button label="Update" variant="Brand" onclick={handleupdate}>
+									</lightning-button>
+								</center>
+								</div>-->
+							</lightning-card>
+						</div>
+
+
+					
+
+					</lightning-card>
+
+				</div>
+				<!-- Modal/Popup Box LWC footer starts here -->
+				<footer class="slds-modal__footer">
+					<button class="slds-button slds-button_neutral" onclick={closeModal1} title="Cancel">Cancel</button>
+					<button class="slds-button slds-button_brand" onclick={submitDetails1} title="Save">Save</button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+
+
+
+</template>

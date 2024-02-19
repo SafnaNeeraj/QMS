@@ -1,0 +1,385 @@
+<template>
+    <lightning-card>
+            <p style="font-size: 25px;text-align: center; padding-bottom:20px;"><b>Copy Part (Non SPAC)</b></p>
+    <div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+                        <lightning-layout>
+                            <lightning-layout-item size="2">
+                                <span style="color: cornflowerblue; font-weight: bold;">Customer:</span></br>
+                                <span>{customer}</span>
+                            </lightning-layout-item>
+    
+                            <lightning-layout-item size="2">
+                                <span style="color: cornflowerblue; font-weight: bold;">Buyer:</span></br>
+                                <span>{buyer}</span>
+                            </lightning-layout-item>
+    
+                            <lightning-layout-item size="2">
+                                <span style="color: cornflowerblue; font-weight: bold;">Platform:</span></br>
+                                <span>{platform}</span>
+                            </lightning-layout-item>
+    
+                            <lightning-layout-item size="2">
+                                <span style="color: cornflowerblue; font-weight: bold;">OEM:</span></br>
+                                <span>{oem}</span>
+                            </lightning-layout-item>
+    
+                            <lightning-layout-item size="2">
+                                <span style="color: cornflowerblue; font-weight: bold;">SOP:</span></br>
+                                <span>{sop}</span>
+                            </lightning-layout-item>
+    
+                            <lightning-layout-item size="2">
+                                <span style="color: cornflowerblue; font-weight: bold;">EOP:</span></br>
+                                <span>{eop}</span>
+                            </lightning-layout-item>
+    
+                        </lightning-layout>
+                    </div>
+        
+    
+        <lightning-record-edit-form style="height: 100%; width: 100%"
+            object-api-name="Quote_Line_Item__c" onsuccess={handleSuccess} onsubmit={handleSubmit} onerror={handleError}>	
+                    <lightning-messages></lightning-messages>
+                    <div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+                        <lightning-accordion allow-multiple-sections-open active-section-name="B">
+                            <lightning-accordion-section name="B" label="Element Details"
+                                style="color: cornflowerblue; font-weight: bold;">
+                                <p style="color: cornflowerblue; font-weight: bold;">Customer Information</p>
+                                <lightning-layout>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Customer_Part__c" value={Customer_Part__c} required="true" onchange={handleCustomerPartChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Customer_Drawing__c" value={Customer_Drawing__c} onchange={handleCustomerDrawingChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Customer_Drawing_Rev__c" value={Customer_Drawing_Rev__c} onchange={handleCustomerDrawingRevChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Customer_Drawing_Date__c" value={Customer_Drawing_Date__c} onchange={handleCustomerDrawingDateChange}>
+                                        </lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+    
+                                <lightning-input-field field-name="Quote_Express__c" value={recordId}
+                                    style="display: none;"></lightning-input-field></span>
+    
+                                <lightning-input-field field-name="Name" style="display: none;"></lightning-input-field>
+                                <lightning-layout>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Annual_Usage__c" value={Annual_Usage__c} required="true" onchange={handleAnnualUsage}>
+                                        </lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input type="text" label="Value" value={value} onchange={handleValue}
+                                            disabled={disabled}></lightning-input>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+    
+                                <lightning-input-field style="display: none;" field-name="No_of_Parts_Vehicle__c"
+                                    value={partsValue}></lightning-input-field>
+                                <lightning-input-field style="display: none;" field-name="Est_Annual_Usage__c"
+                                    value={annualValue}></lightning-input-field>
+    
+                                <lightning-layout>
+                                    <lightning-layout-item size="8">
+                                        <span><lightning-input-field
+                                                    field-name="Automotive_Programs__c" value={Automotive_Programs__c} onchange={handleAutomotiveProgramsChange}></lightning-input-field></span>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <lightning-layout>
+    
+                                    <lightning-layout-item size="6">
+                                        <lightning-input-field field-name="Part_Description__c" value={Part_Description__c} required="true" onchange={handlePartDescriptionChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="6">
+                                        <span><lightning-input-field
+                                                    field-name="Additional_Notes__c" value={Additional_Notes__c} onchange={handleAdditionalNotesChange}></lightning-input-field></span>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+    
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+    
+                    </div>
+    
+    
+    
+    
+                    <div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+                        <lightning-accordion allow-multiple-sections-open active-section-name="C">
+                            <lightning-accordion-section name="C" label="Element Details"
+                                style="color: cornflowerblue; font-weight: bold;">
+                                <p style="color: cornflowerblue; font-weight: bold;">---Part Costing---</p>
+    
+                                <lightning-layout>
+                                    <lightning-layout-item size="12">
+                                        <lightning-input-field field-name="Part_Cost_Currency__c" value={Part_Cost_Currency__c} onchange={handlePartCostCurrencyChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+    
+    
+                                <hr>
+                                <p class="slds-var-p-around_medium" style="color: cornflowerblue; font-weight: bold;">
+                                    ---Part Conclusion---</p></br>
+                                <lightning-layout>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Feasible_Customer__c" value={Feasible_Customer__c} onchange={handleFeasibleCustomerChange}></lightning-input-field>
+                                        <template if:true={Feasible_Customer__c}>
+											<lightning-layout>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Customer_Part__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Customer_Drawing__c"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Customer_Drawing_Rev__c"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Customer_Drawing_Date__c">
+													</lightning-input-field>
+												</lightning-layout-item>
+												</lightning-layout>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Part_Description__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+							
+											
+									</template>
+										<template if:true={RB_W_Alternative_Proposal__c}>
+											<lightning-layout>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Alternate_Proposal_Drawing__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Rev__c"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Rev_Date__c"></lightning-input-field>
+												</lightning-layout-item>
+												
+												</lightning-layout>
+												<lightning-layout>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Part_Description__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Notes__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												</lightning-layout>
+											
+									</template>
+										<template if:true={Not_Feasible__c}>
+											<lightning-layout>
+												<lightning-layout-item size="12">
+													<lightning-input-field field-name="Reasons__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												
+												</lightning-layout>								
+									</template>
+                                    </lightning-layout-item>
+    
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Feasible_Proposal__c" disabled={feasiblePropDisable} ></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="RB_W_Alternative_Proposal__c" value={RB_W_Alternative_Proposal__c} onchange={handleAlternativeProposalChange}>
+                                        </lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3">
+                                        <lightning-input-field field-name="Not_Feasible__c" value={Not_Feasible__c} onchange={handleNotFeasibleChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <hr>
+    
+                                <p class="slds-var-p-around_medium" style="color: cornflowerblue; font-weight: bold;">
+                                    ---Part Summary---</p></br>
+                                <lightning-layout>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Completely_New_Design__c" value={Completely_New_Design__c} onchange={handleCompletelyNewDesignChange}>
+                                            <template if:true={Same_as__c}>
+											<lightning-layout>
+												<lightning-layout-item size="12">
+													<lightning-input-field field-name="Like_Part__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												
+												</lightning-layout>
+											
+									</template>
+                                        </lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Partially_Close_to__c" value={Partially_Close_to__c} onchange={handlePartiallyCloseChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Same_as__c" value={Same_as__c} onchange={handleSameChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <hr>
+                                <p class="slds-var-p-around_medium" style="color: cornflowerblue; font-weight: bold;">
+                                    ---Process Considerations---
+                                </p></br>
+                                <lightning-layout>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Manufacture__c" value={Manufacture__c} onchange={handleManufactureChange}></lightning-input-field>
+                                        <template if:true={Buy_In_Complete__c}>
+											<lightning-layout>
+												<lightning-layout-item size="7">
+													<lightning-input-field field-name="Quoted_Supplier__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="7">
+													<lightning-input-field field-name="Supplier_Drawing__c"></lightning-input-field>
+												</lightning-layout-item>
+												
+												<lightning-layout-item size="7">
+												<lightning-input-field field-name="Rev__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="7">
+												<lightning-input-field field-name="Rev_Date__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												
+												</lightning-layout>
+												<lightning-layout>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Material__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Training__c"></lightning-input-field>
+												</lightning-layout-item>
+												
+												
+												</lightning-layout>
+												<lightning-layout>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Tooling__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Gauging__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Others__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												</lightning-layout>
+												
+											
+									</template>
+									<template if:true={Buy__c}>
+											<lightning-layout>
+												<lightning-layout-item size="7">
+													<lightning-input-field field-name="Quoted_Supplier__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="7">
+													<lightning-input-field field-name="Supplier_Drawing__c"></lightning-input-field>
+												</lightning-layout-item>
+												
+												<lightning-layout-item size="7">
+												<lightning-input-field field-name="Rev__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="7">
+												<lightning-input-field field-name="Rev_Date__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												
+												</lightning-layout>
+												<lightning-layout>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Material__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Training__c"></lightning-input-field>
+												</lightning-layout-item>
+												
+												
+												</lightning-layout>
+												<lightning-layout>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Tooling__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Gauging__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Others__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												</lightning-layout>
+												
+											
+									</template>
+									
+									<template if:true={Manufacture__c}>
+											<lightning-layout>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Material__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+													<lightning-input-field field-name="Training__c"></lightning-input-field>
+												</lightning-layout-item>
+												
+												
+												</lightning-layout>
+												<lightning-layout>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Tooling__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Gauging__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												<lightning-layout-item size="10">
+												<lightning-input-field field-name="Others__c" required="true"></lightning-input-field>
+												</lightning-layout-item>
+												</lightning-layout>
+											
+									</template>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Buy_In_Complete__c" value={Buy_In_Complete__c} onchange={handleBuyInCompleteChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Buy__c" value={Buy__c} onchange={handleBuyChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <hr>
+                                <p class="slds-var-p-around_medium" style="color: cornflowerblue; font-weight: bold;">
+                                    ---Product Information---</p>
+                                </br>
+                                <lightning-layout>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Cost__c" value={Cost__c} onchange={handleCostChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-input-field field-name="Net_Weight_Kg__c" value={Net_Weight_Kg__c} onchange={handleNetWeightKgChange}></lightning-input-field>
+                                    <lightning-layout-item size="4">
+                                        <lightning-input-field field-name="Standard_Pack_Quantity__c" value={Standard_Pack_Quantity__c} onchange={handleStandardPackQuantityChange}>
+                                        </lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <lightning-layout>
+                                    <lightning-layout-item size="12">
+                                        <lightning-input-field field-name="Sample_Lead_Time__c" value={Sample_Lead_Time__c} onchange={handleSampleLeadTimeChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <lightning-layout>
+                                    <lightning-layout-item size="6">
+                                        <lightning-input-field field-name="Production_Lead_Time__c" value={Production_Lead_Time__c} onchange={handleProductionLeadTimeChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="6">
+                                        <lightning-input-field field-name="Quoted_Group__c" value={Quoted_Group__c} onchange={handleQuotedGroupChange}></lightning-input-field>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                                <lightning-layout-item size="6">
+                                    <lightning-input-field field-name="Risk_Analysis__c" value={Risk_Analysis__c} onchange={handleRiskAnalysisChange}></lightning-input-field>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="6">
+                                    <lightning-input-field field-name="Additional_Comments__c" value={Additional_Comments__c} onchange={handleAdditionalCommentsChange}></lightning-input-field>
+                                </lightning-layout-item>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+                    </div>
+                    <div style="text-align:center;" >
+                        <lightning-button class="slds-var-p-around_medium" variant="neutral" label="Cancel"
+                            onclick={handleCancel}></lightning-button>
+                        <lightning-button variant="brand" class="slds-var-p-around_medium" type="submit" label="Save">
+                        </lightning-button>
+                    </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+    </template>

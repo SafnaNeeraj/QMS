@@ -1,0 +1,40 @@
+.dummy{
+	color : black;
+}
+
+   .custom-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .header-cell {
+        border-bottom: 1px solid #000; /* Add a 1px solid bottom border to each header cell */
+        padding: 8px;
+        text-align: center;
+    }
+
+    .custom-table td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .custom-table tr td:not(:last-child) {
+        border-right: none;
+    }
+      .header-cell {
+        border-right: 1px solid #000; /* Add a 1px solid right border to each header cell */
+        padding: 8px;
+        text-align: center;
+    }
+
+    .custom-table td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+    }
+    .slds-modal__container{
+    width: 90% !important;
+    max-width: 90% !important;
+    
+}

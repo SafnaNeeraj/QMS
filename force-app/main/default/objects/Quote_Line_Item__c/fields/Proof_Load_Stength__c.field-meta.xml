@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proof_Load_Stength__c</fullName>
+    <externalId>false</externalId>
+    <label>Proof Load Strength</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPAC_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PCO5 (ISO - 898 -2)</fullName>
+                <default>false</default>
+                <label>PCO5 (ISO - 898 -2)</label>
+            </value>
+            <value>
+                <fullName>PC5 (ISO 898-2)</fullName>
+                <default>false</default>
+                <label>PC5 (ISO 898-2)</label>
+            </value>
+            <value>
+                <fullName>PC8 (ISO 898-2)</fullName>
+                <default>false</default>
+                <label>PC8 (ISO 898-2)</label>
+            </value>
+            <value>
+                <fullName>PC10 (ISO 898-2)</fullName>
+                <default>false</default>
+                <label>PC10 (ISO 898-2)</label>
+            </value>
+            <value>
+                <fullName>PC12 (ISO 898-2)</fullName>
+                <default>false</default>
+                <label>PC12 (ISO 898-2)</label>
+            </value>
+            <value>
+                <fullName>PC 8.8 (ISO 898-1)</fullName>
+                <default>false</default>
+                <label>PC 8.8 (ISO 898-1)</label>
+            </value>
+            <value>
+                <fullName>PC 9.8 (ISO 898-1)</fullName>
+                <default>false</default>
+                <label>PC 9.8 (ISO 898-1)</label>
+            </value>
+            <value>
+                <fullName>PC 10.9 (ISO 898-1)</fullName>
+                <default>false</default>
+                <label>PC 10.9 (ISO 898-1)</label>
+            </value>
+            <value>
+                <fullName>M6</fullName>
+                <default>false</default>
+                <label>M6</label>
+            </value>
+            <value>
+                <fullName>M7</fullName>
+                <default>false</default>
+                <label>M7</label>
+            </value>
+            <value>
+                <fullName>M8</fullName>
+                <default>false</default>
+                <label>M8</label>
+            </value>
+            <value>
+                <fullName>M9</fullName>
+                <default>false</default>
+                <label>M9</label>
+            </value>
+            <value>
+                <fullName>M10</fullName>
+                <default>false</default>
+                <label>M10</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>PC 8.8 (ISO 898-1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>PC 9.8 (ISO 898-1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>PC 10.9 (ISO 898-1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>M6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>M7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>M8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>M9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Bolt Assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Ball Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Bolt</controllingFieldValue>
+            <controllingFieldValue>SPAC® Clinch Stud</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <controllingFieldValue>SPAC® Stud</controllingFieldValue>
+            <valueName>M10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <valueName>PCO5 (ISO - 898 -2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <valueName>PC5 (ISO 898-2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <valueName>PC8 (ISO 898-2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <valueName>PC10 (ISO 898-2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPAC® Cap Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Bracket/nut assembly</controllingFieldValue>
+            <controllingFieldValue>SPAC® Nut</controllingFieldValue>
+            <controllingFieldValue>SPAC® Other</controllingFieldValue>
+            <controllingFieldValue>SPAC® Spacer</controllingFieldValue>
+            <valueName>PC12 (ISO 898-2)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

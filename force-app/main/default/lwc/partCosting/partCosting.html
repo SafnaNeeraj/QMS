@@ -1,0 +1,511 @@
+<template>
+	<template if:true={openPartCosting}>
+		<!-- Modal/Popup Box LWC starts here -->
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<!-- Modal/Popup Box LWC header here -->
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+					<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+						<p style="font-size: 25px;text-align: center; padding-bottom:20px;"><b>Part Costing</b></p>
+					</h2>
+				</header>
+				<!-- Modal/Popup Box LWC body starts here -->
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					<lightning-card>
+
+
+
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+							<lightning-layout>
+								<lightning-layout-item size="1.5">
+									<span style="color: cornflowerblue; font-weight: bold;">Customer:</span></br>
+									<span>{customer}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1.5">
+									<span style="color: cornflowerblue; font-weight: bold;">Quote #:</span></br>
+									<span>{buyer}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">Buyer:</span></br>
+									<span>{buyer}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">Application:</span></br>
+									<span>{application}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">Platform:</span></br>
+									<span>{platform}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">OEM:</span></br>
+									<span>{oem}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">SOP:</span></br>
+									<span>{sop}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">EOP:</span></br>
+									<span>{eop}</span>
+								</lightning-layout-item>
+								<lightning-layout-item size="1.5">
+									<span style="color: cornflowerblue; font-weight: bold;">Net wt(Kg):</span></br>
+									<span>{eop}</span>
+								</lightning-layout-item>
+							</lightning-layout>
+						</div>
+
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<lightning-layout>
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Part Cost Currency:</span></br>
+									<span>USD</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Quote Currency:</span></br>
+									<span>USD</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Like Part#:</span></br>
+									<span>{likePart}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">Part:</span></br>
+									<span>{part}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Customer Part #:</span></br>
+									<span>{customerPart}</span>
+								</lightning-layout-item>
+
+								<lightning-layout-item size="1">
+									<span style="color: cornflowerblue; font-weight: bold;">PCS/Yr:</span></br>
+									<span>{pcs}</span>
+								</lightning-layout-item>
+								<lightning-layout-item size="2">
+									<span style="color: cornflowerblue; font-weight: bold;">Std Pack Quantity/Container:</span></br>
+									<span>{standardPackQty}</span>
+								</lightning-layout-item>
+
+							</lightning-layout>
+						</div></br>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+							<p style="background: #c5dcf0e3 ; padding:10px"><b>Process Costing</b></p>
+							<table class="custom-table slds-box">
+								<tr>
+									<th class="header-cell"><b>Direct Process Cost</b></th>
+									<th class="header-cell"><b>Supplier</b></th>
+									<th class="header-cell"><b>Work Center</b></th>
+									<th class="header-cell"><b>Rate</b></th>
+									<th class="header-cell"><b>Ext Cost</b></th>
+								</tr>
+								<tr for:each={data} for:item="data" key={data.id}>
+									<td style="text-align:center;">{data.Operation__c}</td>
+									<td style="text-align:center;">{data.Supplier__c}</td>
+									<td style="text-align:center;">{data.Work_Center__c}</td>
+									<td style="text-align:center;">{data.Rate_Pcs_hr__c}</td>
+									<td style="text-align:center;">{data.Ext_Cost__c}</td>
+
+								</tr>
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" colspan="4">
+										Process Total
+										(USD)</td>
+										<td>{processTotal}</td>
+								</tr>
+
+							</table>
+
+						</div>
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+							<p style="background: #c5dcf0e3 ; padding:10px"><b>Eng. Section</b></p>
+								<td style="text-align:left;" colspan="11"><b>Components:</b></td>
+							<table class="custom-table slds-box">
+								<thead>
+								<tr>
+									<th class="header-cell" colspan="1"><b>Other Components Part Name-Part No</b></th>
+									<th class="header-cell" colspan="1"><b>Unit</b></th>
+									<th class="header-cell" colspan="1"><b>Qty Per Unit </b></th>
+									<th class="header-cell" colspan="1"><b>Unit Cost</b></th>
+									<th class="header-cell" colspan="1"><b>Ext Cost</b></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+                                    <td>
+										<lightning-combobox
+										data-id= "1"
+										value={value}
+										placeholder={engcmp1}
+										options={otherComponentOptions}
+										onchange={handleOtherCompChange}
+                                         ></lightning-combobox>
+									</td>
+									<td>
+										PCS
+									</td>
+									<td>
+									<lightning-input type="number" name="Quantity" value={quantity}  onchange={handleQuantityChange} ></lightning-input>
+									</td>
+									<td>
+									<lightning-input type="number" step=".01" formatter="currency"  name="UnitCost" value={cost} onchange={handleUnitCostChange}></lightning-input>
+								    </td>
+									<td>
+										<lightning-input type="number" step=".01" formatter="currency" value={extCost}  disabled="true"></lightning-input>
+									</td>
+								</tr>
+								<tr>
+                                    <td>
+										<lightning-combobox
+										data-id= "2"
+										value={value}
+										placeholder={engcmp2}
+										options={otherComponentOptions}
+										onchange={handleOtherCompChange}
+                                         ></lightning-combobox>
+									</td>
+									<td>
+										PCS
+									</td>
+									<td>
+									<lightning-input type="number" name="Quantity" value={quantity1}  onchange={handleQuantity1Change} ></lightning-input>
+									</td>
+									<td>
+									<lightning-input type="number" step=".01" formatter="currency"  name="UnitCost" value={cost1} onchange={handleUnitCost1Change}></lightning-input>
+								    </td>
+									<td>
+										<lightning-input type="number" step=".01" formatter="currency" value={extCost1}  disabled="true"></lightning-input>
+									</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+							<td style="text-align:left;" colspan="11"><b>Items:</b></td>
+							<table class="custom-table slds-box">				
+									<thead>
+								<tr>
+									<th class="header-cell" colspan="1"><b>Item Cost</b></th>
+									<th class="header-cell" colspan="1"><b>Qty Per Unit </b></th>
+									<th class="header-cell" colspan="1"><b>Unit Cost</b></th>
+									<th class="header-cell" colspan="1"><b>Ext Cost</b></th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<td>
+									<lightning-combobox
+									data-id= "1"
+									value={value}
+									placeholder={engItem1}
+									options={otherItemOptions}
+									onchange={handleItemCompChange}
+									 ></lightning-combobox>
+								</td>
+								<td>
+									<lightning-input type="number" name="Quantity" value={quantity2}  onchange={handleQuantity2Change} ></lightning-input>
+									</td>
+									<td>
+									<lightning-input type="number" step=".01" formatter="currency"  name="UnitCost" value={cost2} onchange={handleUnitCost2Change}></lightning-input>
+								    </td>
+									<td>
+										<lightning-input type="number" step=".01" formatter="currency" value={extCost2}  disabled="true"></lightning-input>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<lightning-combobox
+										data-id= "2"
+										value={value}
+										placeholder={engItem1}
+										options={otherItemOptions}
+										onchange={handleItemCompChange}
+										 ></lightning-combobox>
+									</td>
+									<td>
+										<lightning-input type="number" name="Quantity" value={quantity3} onchange={handleQuantity3Change} ></lightning-input>
+										</td>
+										<td>
+										<lightning-input type="number" step=".01" formatter="currency"  name="UnitCost" value={cost3} onchange={handleUnitCost3Change}></lightning-input>
+										</td>
+										<td>
+											<lightning-input type="number" step=".01" formatter="currency" value={extCost3}  disabled="true"></lightning-input>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							
+								
+									<lightning-layout>
+										<lightning-layout-item padding="around-small" size="9">
+										<p style="text-align:left;color: cornflowerblue; font-weight: bold;">Markup(%)</p>									
+								        </lightning-layout-item>
+								        <lightning-layout-item padding="around-small" size="3">									
+										<lightning-input type="number" step=".01" value={markup} onchange={handleMarkup}></lightning-input>									
+										</lightning-layout-item >
+										</lightning-layout>
+			
+									<lightning-layout>
+									<lightning-layout-item padding="around-small" size="9">
+										<p style="color: cornflowerblue; font-weight: bold;">Engineering Total(USD)</p>
+									</lightning-layout-item>
+									<lightning-layout-item padding="around-small" size="3">
+										<lightning-input type="number" step=".01" formatter="currency" value={engTotal} disabled="true"></lightning-input>
+									</lightning-layout-item>
+						        	</lightning-layout>
+
+						</div>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<table class="custom-table slds-box">
+
+								<tr>
+									<td colspan="9">
+										<p style="text-align:left;color: cornflowerblue; font-weight: bold;">Sub Total Cost
+										(USD) = Process Total(USD) + Engineering Total(USD)</p>
+									</td>
+									<td colspan="2"  width="25%">
+										<lightning-input type="number" step=".01" formatter="currency" value={subTotalCost} disabled="true"></lightning-input>
+									</td>
+								</tr>
+
+							</table>
+
+						</div>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<table class="custom-table slds-box">
+
+
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" colspan="9" >
+										Gross Margin (%)
+									</td>
+									<td colspan="2"  width="25%">
+										<lightning-input type="number" step=".01" value={grossMargin} onchange={handleGrossMargin}></lightning-input>
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" colspan="9">
+										Selling
+										Price(USD) = Sub Total Cost/(1-Gross Margin(%))
+									</td>
+									<td colspan="2"  width="25%">
+										<lightning-input type="number" step=".01" formatter="currency" value={sellingPrice} onchange={handleSellingPrice}></lightning-input>
+									</td>
+								</tr>
+
+							</table>
+
+						</div>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+							<p style="background: #c5dcf0e3 ; padding:10px"><b>Sales Section - Misc.</b></p>
+							<table class="custom-table slds-box">
+								<thead>
+								<tr>
+									<th class="header-cell" colspan="1"><b> Components Name</b></th>
+									<th class="header-cell" colspan="1"><b>Markup %</b></th>
+									<th class="header-cell" colspan="1"><b>Qty Per Unit </b></th>
+									<th class="header-cell" colspan="1"><b>Unit Cost</b></th>
+									<th class="header-cell" colspan="1"><b>Ext Cost</b></th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<lightning-combobox
+										data-id= "1"
+										value={value}
+										placeholder={salesCmp1}
+										options={compNameOptions}
+										onchange={handleSalesOptions}
+										 ></lightning-combobox>
+									</td>
+									<td>
+										<lightning-input type="number" step=".01"  value={markup1} onchange={handleMarkup1}></lightning-input>
+										</td>
+										<td>
+										<lightning-input type="number" name="Quantity" value={quantity4}  onchange={handleQuantity4Change} ></lightning-input>
+										</td>
+										<td>
+										<lightning-input type="number" step=".01" formatter="currency"  name="UnitCost" value={cost4} onchange={handleUnitCost4Change}></lightning-input>
+										</td>
+										<td>
+											<lightning-input type="number" step=".01" formatter="currency" value={extCost4}  disabled="true"></lightning-input>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<lightning-combobox
+											data-id= "2"
+											value={value}
+											placeholder={salesCmp1}
+											options={compNameOptions}
+											 ></lightning-combobox>
+										</td>
+										<td>
+											<lightning-input type="number" step=".01"  value={markup2} onchange={handleMarkup2}></lightning-input>
+											</td>
+											<td>
+											<lightning-input type="number" name="Quantity" value={quantity5}  onchange={handleQuantity5Change} ></lightning-input>
+											</td>
+											<td>
+											<lightning-input type="number" step=".01" formatter="currency"  name="UnitCost" value={cost5} onchange={handleUnitCost5Change}></lightning-input>
+											</td>
+											<td>
+												<lightning-input type="number" step=".01" formatter="currency" value={extCost5}  disabled="true"></lightning-input>
+											</td>
+										</tr>
+							</tbody>
+							</table>
+							<lightning-layout>
+								<lightning-layout-item padding="around-small" size="9">
+								<p style="text-align:left;color: cornflowerblue; font-weight: bold;">Misc Total()</p>									
+								</lightning-layout-item>
+								<lightning-layout-item padding="around-small" size="3">									
+								<lightning-input type="number" step=".01" formatter="currency" value={miscTotal} disabled="true"></lightning-input>									
+								</lightning-layout-item >
+								</lightning-layout>
+						</div>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<table class="custom-table slds-box">
+
+
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" width="75%">
+										Cost Per Kg.
+										(USD)
+									</td>
+									<td width="25%">
+										<lightning-input type="number" step=".01" formatter="currency" value={costPerKg} onchange={handleCostPerKgChange}></lightning-input>
+									</td>
+									
+								</tr>
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" width="75%">
+										Ocean Freight
+										(USD) = Net Weight * Cost per Kg (USD)
+
+									</td>
+									<td width="25%">
+										<lightning-input type="number" step=".01" formatter="currency" value={oceanFreight} disabled="true"></lightning-input>
+								</td>
+								</tr>
+
+							</table>
+
+						</div>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<table class="custom-table slds-box">
+
+
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" width="75%">
+										Customs (%)
+									</td>
+									<td width="25%">
+										<lightning-input type="number" step=".01" value={customsPercent} onchange={handleCustomsChange}></lightning-input>
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" width="75%">
+										Customs (USD) =
+										(Sub Total Cost(USD)+ Ocean freight(USD)* Customs(%))
+
+									</td>
+									<td width="25%">
+										<lightning-input type="number" step=".01" formatter="currency" value={customs} disabled="true"></lightning-input></td>
+								</tr>
+
+							</table>
+
+						</div>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<table class="custom-table slds-box">
+
+
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" width="75%">
+										Local Freight(USD)                                                                                                       
+									</td>
+									<td width="25%">
+										<lightning-input type="number" step=".01" formatter="currency" value={localFreight} onchange={handleLocalChange}></lightning-input>
+									</td>
+								</tr>
+
+
+							</table>
+
+						</div>
+
+						<div class="slds-box" style="margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem;">
+
+							<table class="custom-table slds-box">
+
+
+								<tr>
+									<td style="text-align:left;color: cornflowerblue; font-weight: bold;" width="75%">
+										Total Price(USD)=
+										Misc total(USD)+ Ocean Freight(USD)
+										+ Local Freight(USD) + Customs() + Selling Price
+									</td>
+									<td width="25%">
+										<lightning-input type="number" step=".01" formatter="currency" value={totalPrice}  disabled="true"></lightning-input></td>
+									
+								</tr>
+
+
+							</table>
+
+						</div>
+
+					</lightning-card>
+
+				</div>
+				<!-- Modal/Popup Box LWC footer starts here -->
+				<footer class="slds-modal__footer">
+					<button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+					<button class="slds-button slds-button_brand" onclick={submitDetails} title="Update">Update</button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+
+
+</template>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>operationValue</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>operationValue</shortDescription>
+        <value>Machining Operations,Assembly Operations,Quality Control Operations,Packaging Operations,Maintenance Operations</value>
+    </labels>
+    <labels>
+        <fullName>suppliervalues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>suppliervalues</shortDescription>
+        <value>Industry Directories,Trade Shows,Industry Associations,Online B2B Platforms,Networking</value>
+    </labels>
+    <labels>
+        <fullName>workCenter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>workCenter</shortDescription>
+        <value>Machining Center,Assembly Center,Welding Center,Injection Molding Center,Quality Control Center,Finishing Center,Material Handling Center,Packaging Center,Logistics and Shipping Center</value>
+    </labels>
+</CustomLabels>

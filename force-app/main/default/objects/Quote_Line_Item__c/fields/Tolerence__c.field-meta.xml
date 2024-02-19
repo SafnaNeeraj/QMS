@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tolerence__c</fullName>
+    <externalId>false</externalId>
+    <label>Tolerence</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6E</fullName>
+                <default>false</default>
+                <label>6E</label>
+            </value>
+            <value>
+                <fullName>6G</fullName>
+                <default>false</default>
+                <label>6G</label>
+            </value>
+            <value>
+                <fullName>6H</fullName>
+                <default>false</default>
+                <label>6H</label>
+            </value>
+            <value>
+                <fullName>E6 (ISO 286-2)</fullName>
+                <default>false</default>
+                <label>E6 (ISO 286-2)</label>
+            </value>
+            <value>
+                <fullName>E7 (ISO 286-2)</fullName>
+                <default>false</default>
+                <label>E7 (ISO 286-2)</label>
+            </value>
+            <value>
+                <fullName>E11 (ISO 286-2)</fullName>
+                <default>false</default>
+                <label>E11 (ISO 286-2)</label>
+            </value>
+            <value>
+                <fullName>E12 (ISO 286-2)</fullName>
+                <default>false</default>
+                <label>E12 (ISO 286-2)</label>
+            </value>
+            <value>
+                <fullName>E13 (ISO 286-2)</fullName>
+                <default>false</default>
+                <label>E13 (ISO 286-2)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

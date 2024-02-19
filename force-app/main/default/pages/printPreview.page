@@ -1,0 +1,250 @@
+<apex:page Controller="printPreviewController" renderAs="pdf" applyHtmlTag="false" showHeader="false" >
+    <HTML class="htmlClass">
+        <HEAD>
+            
+            <style>
+                
+                @page {
+                
+                size: A4;
+                
+                @top-center {
+                content: element(header);
+                }
+                
+                @bottom-left {
+                content: element(footer);
+                }
+                
+                }
+                
+            </style>
+            <style>
+                .tablefix {
+                table-layout: fixed;
+                }
+                .one{
+                float:left;}
+                .two{
+                float:right;}
+                
+            </style>
+            <style>
+                .content-box {
+                border: 4px solid #000; /* Add a border to create the box */
+                padding: 10px; /* Add padding for spacing */
+                margin: 10px; /* Add margin for separation from other elements */
+                }
+            </style>
+            <style>
+                /* CSS for the table */
+                .table-border {
+                border: 1px solid #000; /* Black border */
+                width: 100%; /* Table width */
+                
+                }
+                
+                /* CSS for table header (th) */
+                .table-header {
+                background-color:  #ccc; /* Header background color */
+                color: #000; /* Header text color */
+                text-align: center; /* Center-align header text */
+                padding: 5px; /* Add padding for spacing */
+                
+                }
+            </style>
+            
+            
+            
+            <style type="text/css">
+                .draftBackground {
+                background-image: url("{!$Resource.DraftWatermark}") !important;
+                /* Other background properties as needed */
+                }
+                
+                .rejectedBackground {
+                background-image: url("{!$Resource.RejectedWatermark}") !important;
+                /* Other background properties as needed */
+                }
+            </style>
+            
+            
+        </HEAD>
+        <BODY class="{!IF(quoteExpress.Quote_Status__c == 'Draft', 'draftBackground', IF(quoteExpress.Quote_Status__c =='Rejected' ,'rejectedBackground', 'Approved'))}">
+            <apex:outputPanel layout="block">
+                <apex:outputPanel rendered="{!quoteExpress.Quote_Status__c == 'Draft'}">
+                    
+                    
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!quoteExpress.Quote_Status__c == 'Rejected'}">
+                    
+                </apex:outputPanel>
+            </apex:outputPanel>
+            <div class="content-box">
+                <div class="header">
+                    <table class="tbclass4" style="font-size: 20px;text-align:right">
+                        <td class="">
+                            <p>{!quoteExpress.Phone__c}  </p>
+                        </td>
+                        <td class="">
+                            <P class="rightAling"><b>QUOTE</b></P>
+                        </td> 
+                    </table>
+                </div>
+                
+                <table class="table-border">
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <th class="table-header">CUSTOMER</th>
+                        <th class="table-header">QUOTE</th>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell">To: {!quoteExpress.Customer__c}</td>
+                        <td class="table-cell">RFQ Date: {!quoteExpress.RFQ_Date__c}</td>
+                        
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell">Phone: {!quoteExpress.Phone__c} </td>
+                        <td class="table-cell">Quoted Date: {!quoteExpress.Quote_Due_Date__c}</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell">Attn: To be identified</td>
+                        <td class="table-cell">Quoted By: {!quoteExpress.Createdby.Name}</td>
+                    </tr> 
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell">Fax: {!quoteExpress.Contact__r.Fax}</td>
+                        <td class="table-cell">Email: </td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell">Email: {!quoteExpress.Email__c}</td>
+                        <td class="table-cell">RFQ No: {!quoteExpress.RFQ_No__c}</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell"></td>
+                        <td class="table-cell">Terms: {!quoteExpress.Terms__c}</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell"></td>
+                        <td class="table-cell">FOB:</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell"></td>
+                        <td class="table-cell">Automotive Programs:{!quoteExpress.Automotive_Programs__c}</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell"></td>
+                        <td class="table-cell">Salesperson:{!quoteExpress.Createdby.Name}</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell"></td>
+                        <td class="table-cell">Phone:{!quoteExpress.Createdby.Phone}</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell"></td>
+                        <td class="table-cell">Email: {!quoteExpress.Createdby.Email}</td>
+                    </tr>
+                    <tr style="font-size:14px;font-weight:bold;">
+                        <td class="table-cell"></td>
+                        <td class="table-cell">Quote Currency: USD </td>
+                    </tr>
+                    <!-- Add more rows and data as needed -->
+                </table>
+                
+                
+                
+                <div style="clear:both">      
+                </div>
+                <br/>
+                
+                
+                <div class="lineSpace">                
+                </div>
+                
+                <DIV id="id1_2">
+                    <TABLE  style="border-collapse: collapse;width:100%">
+                        <TR>
+                            <TH colspan="10" style="border: 1px solid;font-size:16px;text-align:center;background-color: #ccc;">PARTS:</TH>
+                        </TR>
+                        <TR>
+                            <TH style="width: 700px; text-align:center; border: 1px solid; font-size:12px;">RBW Drawing Number</TH>
+                            <TH style="width: 250px; text-align:center; border: 1px solid; font-size:12px;">Customer Part/Drawing Number</TH>
+                            <TH style="width: 300px; text-align:center; border: 1px solid; font-size:12px;">Part Description</TH>
+                            <TH style="width: 750px; text-align:center; border: 1px solid; font-size:12px;">Std Pack Qty</TH>
+                            <TH style="width: 150px; text-align:center; border: 1px solid; font-size:12px;">PCS/Yr</TH>
+                            <TH style="width: 150px; text-align:center; border: 1px solid; font-size:12px;">PCS</TH>
+                            <TH style="width: 180px; text-align:center; border: 1px solid; font-size:12px;">Price Each</TH>
+                            <TH style="width: 250px; text-align:center; border: 1px solid; font-size:12px;">Sample/PPAP Lead Time(wks)</TH>
+                            <TH style="width: 300px; text-align:center; border: 1px solid; font-size:12px;">Production Lead Time After Sample/PPAP Approval(wks)</TH>
+                            <TH style="width: 200px; text-align:center; border: 1px solid; font-size:12px;">Developer Charges</TH>
+                        </TR>
+                        <apex:repeat value="{!quoteLineItems}" var="item"> 
+                            
+                            <TR>
+                                <TH style="width: 200px;height:50px; text-align:center; border: 1px solid; font-size:14px;">{!item.RBW_Drawing_Number__c}</TH> 
+                                <TH style="width: 250px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.Customer_Part__c}</TH>
+                                <TH style="width: 300px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.Part_Description__c}</TH>
+                                <TH style="width: 150px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.Standard_Pack_Quantity__c}</TH>
+                                <TH style="width: 150px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.PCS_Yr__c}</TH> 
+                                <TH style="width: 150px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.PCS__c}</TH> 
+                                <TH style="width: 180px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.Pieces__c}</TH>
+                                <TH style="width: 250px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.Sample_Lead_Time__c}</TH>
+                                <TH style="width: 300px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.Production_Lead_Time__c}</TH>
+                                <TH style="width: 200px;height:2px; text-align:center; border: 1px solid; font-size:14px;">{!item.Developer_Charges__c}</TH> 
+                            </TR>
+                            <TR>
+                                <TH colspan="10" style="border: 1px solid;font-size:12px;">Notes:</TH>
+                            </TR>
+                            <TR>
+                                <TH colspan="10" style="border: 1px solid;font-size:12px;">Alt Prop Notes:</TH>
+                            </TR>
+                        </apex:repeat>
+                        
+                        <tr>
+                            <TH colspan="10" style="border: 1px solid;font-size:16px;text-align:center;background-color: #ccc;"> NOTES:</TH>
+                        </tr>
+                    </TABLE>
+                </DIV>
+                
+                <br/>
+                
+                <div class="pp1 marginTop">
+                    
+                    <div style="font-size:14px;font-weight:bold;">
+                        Additional Sales Contact:
+                    </div>
+                </div> 
+                <br/>
+                <div style="font-size:12px;font-weight:bold;">
+                    {!quoteExpress.Additional_Sales_Contact__r.Name}
+                </div>
+                <div style="font-size:10px;font-weight:bold;">
+                   {!userEmail}
+                </div>
+                
+                 <div style="font-size:12px;font-weight:bold;">
+                   {!userPhone}
+                </div>
+               <br/>
+                <div class="pp1 marginTop">
+                    
+                    <div style="font-size:14px;font-weight:bold;">
+                        Terms and Conditions:
+                    </div>
+                </div>   
+                <br/>
+                <div class="pp1 marginTop">
+                    
+                    <div style="font-size:10px;font-weight:bold;">
+                        Quote Valid:
+                    </div>
+                </div> 
+                <br/>
+                <div class="pp1 marginTop">
+                    
+                    <div style="font-size:10px;font-weight:bold;">
+                       {!clauses}
+                    </div>
+                </div>   
+            </div>
+        </BODY>
+    </HTML>
+</apex:page>

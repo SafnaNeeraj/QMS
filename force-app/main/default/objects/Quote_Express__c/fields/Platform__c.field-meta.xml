@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Platform__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Platform is the sum of all common components, systems, and functions across different vehicle models.</inlineHelpText>
+    <label>Platform</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CNC Machining</fullName>
+                <default>false</default>
+                <label>CNC Machining</label>
+            </value>
+            <value>
+                <fullName>Injection Molding</fullName>
+                <default>false</default>
+                <label>Injection Molding</label>
+            </value>
+            <value>
+                <fullName>Die Casting</fullName>
+                <default>false</default>
+                <label>Die Casting</label>
+            </value>
+            <value>
+                <fullName>Stamping and Pressing</fullName>
+                <default>false</default>
+                <label>Stamping and Pressing</label>
+            </value>
+            <value>
+                <fullName>3D Printing/Additive Manufacturing</fullName>
+                <default>false</default>
+                <label>3D Printing/Additive Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Forging</fullName>
+                <default>false</default>
+                <label>Forging</label>
+            </value>
+            <value>
+                <fullName>Plastic Molding (Blow Molding, Thermoforming)</fullName>
+                <default>false</default>
+                <label>Plastic Molding (Blow Molding, Thermoforming)</label>
+            </value>
+            <value>
+                <fullName>Electroplating</fullName>
+                <default>false</default>
+                <label>Electroplating</label>
+            </value>
+            <value>
+                <fullName>Assembly Lines</fullName>
+                <default>false</default>
+                <label>Assembly Lines</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

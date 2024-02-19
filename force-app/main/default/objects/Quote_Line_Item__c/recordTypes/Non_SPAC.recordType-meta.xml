@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_SPAC</fullName>
+    <active>true</active>
+    <label>Non SPAC</label>
+    <picklistValues>
+        <picklist>Annual_Usage__c</picklist>
+        <values>
+            <fullName>Est%2E Annual Usage %28EAU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pieces</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Automotive_Programs__c</picklist>
+        <values>
+            <fullName>Program 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Clinch_Type__c</picklist>
+        <values>
+            <fullName>Clinch Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pierce %26 Clinch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Component_Material__c</picklist>
+        <values>
+            <fullName>Aluminum Cast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aluminum Extrusion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aluminum Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iron Cast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnesium Cast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple layer %28Add to Description%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Length_mm__c</picklist>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Part_Cost_Currency__c</picklist>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pieces_Per_Year_Pieces__c</picklist>
+        <values>
+            <fullName>Pieces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pieces Per Year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proof_Load_Stength__c</picklist>
+        <values>
+            <fullName>M10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC 10%2E9 %28ISO 898-1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC 8%2E8 %28ISO 898-1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC 9%2E8 %28ISO 898-1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC10 %28ISO 898-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC12 %28ISO 898-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC5 %28ISO 898-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC8 %28ISO 898-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCO5 %28ISO - 898 -2%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pull_Through_Min__c</picklist>
+        <values>
+            <fullName>100 N%2F 0%2E1 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200 N%2F 0%2E2 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300 N%2F 0%2E3 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400 N%2F 0%2E4 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 N%2F 0%2E5 kN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Push_Out_Min__c</picklist>
+        <values>
+            <fullName>100 N%2F 0%2E1 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200 N%2F 0%2E2 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300 N%2F 0%2E3 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400 N%2F 0%2E4 kN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>500 N%2F 0%2E5 kN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Quoted_Group__c</picklist>
+        <values>
+            <fullName>Group 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Group 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Group 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Group 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Group 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Report__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPAC_Material__c</picklist>
+        <values>
+            <fullName>Aluminium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbon Steel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stainless Steel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPAC_Type__c</picklist>
+        <values>
+            <fullName>SPAC%C2%AE Ball Stud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Bolt Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Bracket%2Fnut assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Cap Nut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Clinch Bolt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Clinch Stud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Nut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Spacer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAC%C2%AE Stud</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFQ Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spot Buy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Won</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Thread_Size__c</picklist>
+        <values>
+            <fullName>1%2F2%22 - 13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F4%22 - 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F8%22 - 16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2F16%22 -18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2F16%22 - 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%2F16%22 - 20 TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M10 x 1%2E25 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M10 x 1%2E25 Fine TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M10 x 1%2E5 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M10 x 1%2E5 Coarse TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 x 1%2E25 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 x 1%2E25 Fine TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 x 1%2E5 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 x 1%2E5 Fine TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 x 1%2E75 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M12 x 1%2E75 Coarse TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M14 x 1%2E5 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M14 x 2%2E0 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M16 x 1%2E5 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M16 x 2%2E0 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M18 x 1%2E5 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M18 x 2%2E5 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M20 x 1%2E5 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M20 x 2%2E5 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M22 x 1%2E5 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M22 x 2%2E5 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M5 x 0%2E5 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M5 x 0%2E5 Fine TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M5 x 0%2E8 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M5 x 0%2E8 Coarse TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 x 0%2E75 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 x 0%2E75 Fine TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 x 1%2E0 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M6 x 1%2E0 Coarse TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M8 x 1%2E0 Fine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M8 x 1%2E0 Fine TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M8 x 1%2E25 Coarse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M8 x 1%2E25 Coarse TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spacer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tolerence__c</picklist>
+        <values>
+            <fullName>6E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E11 %28ISO 286-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E12 %28ISO 286-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E13 %28ISO 286-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E6 %28ISO 286-2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E7 %28ISO 286-2%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Torque_Out_Min__c</picklist>
+        <values>
+            <fullName>10mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14mm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15mm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
